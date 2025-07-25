@@ -7,6 +7,1469 @@
  */
 
 /**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TBackgroundVariants".
+ */
+export type TBackgroundVariants =
+  | 'bg-transparent'
+  | 'bg-background'
+  | 'bg-primary'
+  | 'bg-secondary'
+  | 'bg-accent'
+  | 'bg-muted';
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IContentHeight".
+ */
+export type IContentHeight = 'h-auto' | 'min-h-screen';
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IMaxWidth".
+ */
+export type IMaxWidth =
+  | (
+      | 'max-w-auto'
+      | 'max-w-xs'
+      | 'max-w-sm'
+      | 'max-w-md'
+      | 'max-w-lg'
+      | 'max-w-xl'
+      | 'max-w-2xl'
+      | 'max-w-3xl'
+      | 'max-w-4xl'
+      | 'max-w-5xl'
+      | 'max-w-6xl'
+      | 'max-w-7xl'
+      | 'max-w-8xl'
+      | 'max-w-9xl'
+      | 'max-w-full'
+      | 'max-w-min'
+      | 'max-w-max'
+      | 'max-w-fit'
+      | 'max-w-0'
+      | 'max-w-4'
+      | 'max-w-6'
+      | 'max-w-8'
+      | 'max-w-10'
+      | 'max-w-12'
+      | 'max-w-14'
+      | 'max-w-16'
+      | 'max-w-20'
+      | 'max-w-24'
+      | 'max-w-26'
+      | 'max-w-32'
+      | 'max-w-36'
+      | 'max-w-40'
+      | 'max-w-34'
+      | 'max-w-48'
+      | 'max-w-52'
+      | 'max-w-56'
+      | 'max-w-[10%]'
+      | 'max-w-[20%]'
+      | 'max-w-[30%]'
+      | 'max-w-[40%]'
+      | 'max-w-[50%]'
+      | 'max-w-[60%]'
+      | 'max-w-[70%]'
+      | 'max-w-[80%]'
+      | 'max-w-[90%]'
+      | 'md:max-w-auto'
+      | 'md:max-w-xs'
+      | 'md:max-w-sm'
+      | 'md:max-w-md'
+      | 'md:max-w-lg'
+      | 'md:max-w-xl'
+      | 'md:max-w-2xl'
+      | 'md:max-w-3xl'
+      | 'md:max-w-4xl'
+      | 'md:max-w-5xl'
+      | 'md:max-w-6xl'
+      | 'md:max-w-7xl'
+      | 'md:max-w-8xl'
+      | 'md:max-w-9xl'
+      | 'md:max-w-full'
+      | 'md:max-w-min'
+      | 'md:max-w-max'
+      | 'md:max-w-fit'
+      | 'md:max-w-0'
+      | 'md:max-w-4'
+      | 'md:max-w-6'
+      | 'md:max-w-8'
+      | 'md:max-w-10'
+      | 'md:max-w-12'
+      | 'md:max-w-14'
+      | 'md:max-w-16'
+      | 'md:max-w-20'
+      | 'md:max-w-24'
+      | 'md:max-w-26'
+      | 'md:max-w-32'
+      | 'md:max-w-36'
+      | 'md:max-w-40'
+      | 'md:max-w-34'
+      | 'md:max-w-48'
+      | 'md:max-w-52'
+      | 'md:max-w-56'
+      | 'md:max-w-[10%]'
+      | 'md:max-w-[20%]'
+      | 'md:max-w-[30%]'
+      | 'md:max-w-[40%]'
+      | 'md:max-w-[50%]'
+      | 'md:max-w-[60%]'
+      | 'md:max-w-[70%]'
+      | 'md:max-w-[80%]'
+      | 'md:max-w-[90%]'
+      | 'lg:max-w-auto'
+      | 'lg:max-w-xs'
+      | 'lg:max-w-sm'
+      | 'lg:max-w-md'
+      | 'lg:max-w-lg'
+      | 'lg:max-w-xl'
+      | 'lg:max-w-2xl'
+      | 'lg:max-w-3xl'
+      | 'lg:max-w-4xl'
+      | 'lg:max-w-5xl'
+      | 'lg:max-w-6xl'
+      | 'lg:max-w-7xl'
+      | 'lg:max-w-8xl'
+      | 'lg:max-w-9xl'
+      | 'lg:max-w-full'
+      | 'lg:max-w-min'
+      | 'lg:max-w-max'
+      | 'lg:max-w-fit'
+      | 'lg:max-w-0'
+      | 'lg:max-w-4'
+      | 'lg:max-w-6'
+      | 'lg:max-w-8'
+      | 'lg:max-w-10'
+      | 'lg:max-w-12'
+      | 'lg:max-w-14'
+      | 'lg:max-w-16'
+      | 'lg:max-w-20'
+      | 'lg:max-w-24'
+      | 'lg:max-w-26'
+      | 'lg:max-w-32'
+      | 'lg:max-w-36'
+      | 'lg:max-w-40'
+      | 'lg:max-w-34'
+      | 'lg:max-w-48'
+      | 'lg:max-w-52'
+      | 'lg:max-w-56'
+      | 'lg:max-w-[10%]'
+      | 'lg:max-w-[20%]'
+      | 'lg:max-w-[30%]'
+      | 'lg:max-w-[40%]'
+      | 'lg:max-w-[50%]'
+      | 'lg:max-w-[60%]'
+      | 'lg:max-w-[70%]'
+      | 'lg:max-w-[80%]'
+      | 'lg:max-w-[90%]'
+      | 'xl:max-w-auto'
+      | 'xl:max-w-xs'
+      | 'xl:max-w-sm'
+      | 'xl:max-w-md'
+      | 'xl:max-w-lg'
+      | 'xl:max-w-xl'
+      | 'xl:max-w-2xl'
+      | 'xl:max-w-3xl'
+      | 'xl:max-w-4xl'
+      | 'xl:max-w-5xl'
+      | 'xl:max-w-6xl'
+      | 'xl:max-w-7xl'
+      | 'xl:max-w-8xl'
+      | 'xl:max-w-9xl'
+      | 'xl:max-w-full'
+      | 'xl:max-w-min'
+      | 'xl:max-w-max'
+      | 'xl:max-w-fit'
+      | 'xl:max-w-0'
+      | 'xl:max-w-4'
+      | 'xl:max-w-6'
+      | 'xl:max-w-8'
+      | 'xl:max-w-10'
+      | 'xl:max-w-12'
+      | 'xl:max-w-14'
+      | 'xl:max-w-16'
+      | 'xl:max-w-20'
+      | 'xl:max-w-24'
+      | 'xl:max-w-26'
+      | 'xl:max-w-32'
+      | 'xl:max-w-36'
+      | 'xl:max-w-40'
+      | 'xl:max-w-34'
+      | 'xl:max-w-48'
+      | 'xl:max-w-52'
+      | 'xl:max-w-56'
+      | 'xl:max-w-[10%]'
+      | 'xl:max-w-[20%]'
+      | 'xl:max-w-[30%]'
+      | 'xl:max-w-[40%]'
+      | 'xl:max-w-[50%]'
+      | 'xl:max-w-[60%]'
+      | 'xl:max-w-[70%]'
+      | 'xl:max-w-[80%]'
+      | 'xl:max-w-[90%]'
+    )[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CMSLinks".
+ */
+export type CMSLinks =
+  | {
+      link: CMSLink;
+      id?: string | null;
+    }[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IGridItem".
+ */
+export type IGridItem =
+  | {
+      rows?:
+        | (
+            | {
+                progress: number;
+                paddingX?: ('px-0' | 'px-2' | 'px-4' | 'px-6' | 'px-8' | 'px-12') | null;
+                paddingY?: ('py-0' | 'py-2' | 'py-4' | 'py-6' | 'py-8' | 'py-12') | null;
+                id?: string | null;
+                blockName?: string | null;
+                blockType: 'progress';
+              }
+            | {
+                rounded: 'rounded-none' | 'rounded-lg' | 'rounded-full';
+                objectFit: 'object-cover' | 'object-contain';
+                objectPosition:
+                  | 'object-center'
+                  | 'object-left'
+                  | 'object-left-top'
+                  | 'object-left-bottom'
+                  | 'object-right'
+                  | 'object-right-top'
+                  | 'object-right-bottom'
+                  | 'object-top'
+                  | 'object-top-left'
+                  | 'object-top-right'
+                  | 'object-bottom'
+                  | 'object-bottom-left'
+                  | 'object-bottom-right';
+                imageSize?: ('auto' | 'icon' | 'aspect-ratio') | null;
+                ratio?: number | null;
+                image?: (number | null) | Media;
+                id?: string | null;
+                blockName?: string | null;
+                blockType: 'card-media';
+              }
+            | {
+                links?: CMSLinks;
+                id?: string | null;
+                blockName?: string | null;
+                blockType: 'links';
+              }
+            | IRichTextContent
+          )[]
+        | null;
+      id?: string | null;
+    }[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LogoBlock".
+ */
+export type LogoBlock =
+  | {
+      url?: string | null;
+      image: number | Media;
+      id?: string | null;
+    }[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IScrollCardItem".
+ */
+export type IScrollCardItem =
+  | {
+      image?: (number | null) | Media;
+      content?: {
+        root: {
+          type: string;
+          children: {
+            type: string;
+            version: number;
+            [k: string]: unknown;
+          }[];
+          direction: ('ltr' | 'rtl') | null;
+          format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+          indent: number;
+          version: number;
+        };
+        [k: string]: unknown;
+      } | null;
+      links?: CMSLinks;
+      id?: string | null;
+    }[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IFlexCardItem".
+ */
+export type IFlexCardItem =
+  | {
+      image?: (number | null) | Media;
+      content?: {
+        root: {
+          type: string;
+          children: {
+            type: string;
+            version: number;
+            [k: string]: unknown;
+          }[];
+          direction: ('ltr' | 'rtl') | null;
+          format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+          indent: number;
+          version: number;
+        };
+        [k: string]: unknown;
+      } | null;
+      links?: CMSLinks;
+      id?: string | null;
+    }[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ISpaceX".
+ */
+export type ISpaceX =
+  | (
+      | 'space-x-0'
+      | 'space-x-1'
+      | 'space-x-2'
+      | 'space-x-3'
+      | 'space-x-4'
+      | 'space-x-5'
+      | 'space-x-6'
+      | 'space-x-8'
+      | 'space-x-10'
+      | 'space-x-12'
+      | 'space-x-14'
+      | 'space-x-16'
+      | 'space-x-20'
+      | 'space-x-24'
+      | 'space-x-28'
+      | 'space-x-32'
+      | 'md:space-x-0'
+      | 'md:space-x-1'
+      | 'md:space-x-2'
+      | 'md:space-x-3'
+      | 'md:space-x-4'
+      | 'md:space-x-5'
+      | 'md:space-x-6'
+      | 'md:space-x-8'
+      | 'md:space-x-10'
+      | 'md:space-x-12'
+      | 'md:space-x-14'
+      | 'md:space-x-16'
+      | 'md:space-x-20'
+      | 'md:space-x-24'
+      | 'md:space-x-28'
+      | 'md:space-x-32'
+      | 'lg:space-x-0'
+      | 'lg:space-x-1'
+      | 'lg:space-x-2'
+      | 'lg:space-x-3'
+      | 'lg:space-x-4'
+      | 'lg:space-x-5'
+      | 'lg:space-x-6'
+      | 'lg:space-x-8'
+      | 'lg:space-x-10'
+      | 'lg:space-x-12'
+      | 'lg:space-x-14'
+      | 'lg:space-x-16'
+      | 'lg:space-x-20'
+      | 'lg:space-x-24'
+      | 'lg:space-x-28'
+      | 'lg:space-x-32'
+      | 'xl:space-x-0'
+      | 'xl:space-x-1'
+      | 'xl:space-x-2'
+      | 'xl:space-x-3'
+      | 'xl:space-x-4'
+      | 'xl:space-x-5'
+      | 'xl:space-x-6'
+      | 'xl:space-x-8'
+      | 'xl:space-x-10'
+      | 'xl:space-x-12'
+      | 'xl:space-x-14'
+      | 'xl:space-x-16'
+      | 'xl:space-x-20'
+      | 'xl:space-x-24'
+      | 'xl:space-x-28'
+      | 'xl:space-x-32'
+    )[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ISpaceY".
+ */
+export type ISpaceY =
+  | (
+      | 'space-y-0'
+      | 'space-y-1'
+      | 'space-y-2'
+      | 'space-y-3'
+      | 'space-y-4'
+      | 'space-y-5'
+      | 'space-y-6'
+      | 'space-y-8'
+      | 'space-y-10'
+      | 'space-y-12'
+      | 'space-y-14'
+      | 'space-y-16'
+      | 'space-y-20'
+      | 'space-y-24'
+      | 'space-y-28'
+      | 'space-y-32'
+      | 'md:space-y-0'
+      | 'md:space-y-1'
+      | 'md:space-y-2'
+      | 'md:space-y-3'
+      | 'md:space-y-4'
+      | 'md:space-y-5'
+      | 'md:space-y-6'
+      | 'md:space-y-8'
+      | 'md:space-y-10'
+      | 'md:space-y-12'
+      | 'md:space-y-14'
+      | 'md:space-y-16'
+      | 'md:space-y-20'
+      | 'md:space-y-24'
+      | 'md:space-y-28'
+      | 'md:space-y-32'
+      | 'lg:space-y-0'
+      | 'lg:space-y-1'
+      | 'lg:space-y-2'
+      | 'lg:space-y-3'
+      | 'lg:space-y-4'
+      | 'lg:space-y-5'
+      | 'lg:space-y-6'
+      | 'lg:space-y-8'
+      | 'lg:space-y-10'
+      | 'lg:space-y-12'
+      | 'lg:space-y-14'
+      | 'lg:space-y-16'
+      | 'lg:space-y-20'
+      | 'lg:space-y-24'
+      | 'lg:space-y-28'
+      | 'lg:space-y-32'
+      | 'xl:space-y-0'
+      | 'xl:space-y-1'
+      | 'xl:space-y-2'
+      | 'xl:space-y-3'
+      | 'xl:space-y-4'
+      | 'xl:space-y-5'
+      | 'xl:space-y-6'
+      | 'xl:space-y-8'
+      | 'xl:space-y-10'
+      | 'xl:space-y-12'
+      | 'xl:space-y-14'
+      | 'xl:space-y-16'
+      | 'xl:space-y-20'
+      | 'xl:space-y-24'
+      | 'xl:space-y-28'
+      | 'xl:space-y-32'
+    )[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IDisplay".
+ */
+export type IDisplay = (
+  | 'block'
+  | 'inline'
+  | 'inline-block'
+  | 'flex'
+  | 'inline-flex'
+  | 'hidden'
+  | 'md:block'
+  | 'md:inline'
+  | 'md:inline-block'
+  | 'md:flex'
+  | 'md:inline-flex'
+  | 'md:hidden'
+  | 'lg:block'
+  | 'lg:inline'
+  | 'lg:inline-block'
+  | 'lg:flex'
+  | 'lg:inline-flex'
+  | 'lg:hidden'
+  | 'xl:block'
+  | 'xl:inline'
+  | 'xl:inline-block'
+  | 'xl:flex'
+  | 'xl:inline-flex'
+  | 'xl:hidden'
+)[];
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IMinWidth".
+ */
+export type IMinWidth =
+  | (
+      | 'min-w-auto'
+      | 'min-w-xs'
+      | 'min-w-sm'
+      | 'min-w-md'
+      | 'min-w-lg'
+      | 'min-w-xl'
+      | 'min-w-2xl'
+      | 'min-w-3xl'
+      | 'min-w-4xl'
+      | 'min-w-5xl'
+      | 'min-w-6xl'
+      | 'min-w-7xl'
+      | 'min-w-8xl'
+      | 'min-w-9xl'
+      | 'min-w-full'
+      | 'min-w-min'
+      | 'min-w-max'
+      | 'min-w-fit'
+      | 'min-w-0'
+      | 'min-w-4'
+      | 'min-w-6'
+      | 'min-w-8'
+      | 'min-w-10'
+      | 'min-w-12'
+      | 'min-w-14'
+      | 'min-w-16'
+      | 'min-w-20'
+      | 'min-w-24'
+      | 'min-w-26'
+      | 'min-w-32'
+      | 'min-w-36'
+      | 'min-w-40'
+      | 'min-w-34'
+      | 'min-w-48'
+      | 'min-w-52'
+      | 'min-w-56'
+      | 'min-w-[10%]'
+      | 'min-w-[20%]'
+      | 'min-w-[30%]'
+      | 'min-w-[40%]'
+      | 'min-w-[50%]'
+      | 'min-w-[60%]'
+      | 'min-w-[70%]'
+      | 'min-w-[80%]'
+      | 'min-w-[90%]'
+      | 'md:min-w-auto'
+      | 'md:min-w-xs'
+      | 'md:min-w-sm'
+      | 'md:min-w-md'
+      | 'md:min-w-lg'
+      | 'md:min-w-xl'
+      | 'md:min-w-2xl'
+      | 'md:min-w-3xl'
+      | 'md:min-w-4xl'
+      | 'md:min-w-5xl'
+      | 'md:min-w-6xl'
+      | 'md:min-w-7xl'
+      | 'md:min-w-8xl'
+      | 'md:min-w-9xl'
+      | 'md:min-w-full'
+      | 'md:min-w-min'
+      | 'md:min-w-max'
+      | 'md:min-w-fit'
+      | 'md:min-w-0'
+      | 'md:min-w-4'
+      | 'md:min-w-6'
+      | 'md:min-w-8'
+      | 'md:min-w-10'
+      | 'md:min-w-12'
+      | 'md:min-w-14'
+      | 'md:min-w-16'
+      | 'md:min-w-20'
+      | 'md:min-w-24'
+      | 'md:min-w-26'
+      | 'md:min-w-32'
+      | 'md:min-w-36'
+      | 'md:min-w-40'
+      | 'md:min-w-34'
+      | 'md:min-w-48'
+      | 'md:min-w-52'
+      | 'md:min-w-56'
+      | 'md:min-w-[10%]'
+      | 'md:min-w-[20%]'
+      | 'md:min-w-[30%]'
+      | 'md:min-w-[40%]'
+      | 'md:min-w-[50%]'
+      | 'md:min-w-[60%]'
+      | 'md:min-w-[70%]'
+      | 'md:min-w-[80%]'
+      | 'md:min-w-[90%]'
+      | 'lg:min-w-auto'
+      | 'lg:min-w-xs'
+      | 'lg:min-w-sm'
+      | 'lg:min-w-md'
+      | 'lg:min-w-lg'
+      | 'lg:min-w-xl'
+      | 'lg:min-w-2xl'
+      | 'lg:min-w-3xl'
+      | 'lg:min-w-4xl'
+      | 'lg:min-w-5xl'
+      | 'lg:min-w-6xl'
+      | 'lg:min-w-7xl'
+      | 'lg:min-w-8xl'
+      | 'lg:min-w-9xl'
+      | 'lg:min-w-full'
+      | 'lg:min-w-min'
+      | 'lg:min-w-max'
+      | 'lg:min-w-fit'
+      | 'lg:min-w-0'
+      | 'lg:min-w-4'
+      | 'lg:min-w-6'
+      | 'lg:min-w-8'
+      | 'lg:min-w-10'
+      | 'lg:min-w-12'
+      | 'lg:min-w-14'
+      | 'lg:min-w-16'
+      | 'lg:min-w-20'
+      | 'lg:min-w-24'
+      | 'lg:min-w-26'
+      | 'lg:min-w-32'
+      | 'lg:min-w-36'
+      | 'lg:min-w-40'
+      | 'lg:min-w-34'
+      | 'lg:min-w-48'
+      | 'lg:min-w-52'
+      | 'lg:min-w-56'
+      | 'lg:min-w-[10%]'
+      | 'lg:min-w-[20%]'
+      | 'lg:min-w-[30%]'
+      | 'lg:min-w-[40%]'
+      | 'lg:min-w-[50%]'
+      | 'lg:min-w-[60%]'
+      | 'lg:min-w-[70%]'
+      | 'lg:min-w-[80%]'
+      | 'lg:min-w-[90%]'
+      | 'xl:min-w-auto'
+      | 'xl:min-w-xs'
+      | 'xl:min-w-sm'
+      | 'xl:min-w-md'
+      | 'xl:min-w-lg'
+      | 'xl:min-w-xl'
+      | 'xl:min-w-2xl'
+      | 'xl:min-w-3xl'
+      | 'xl:min-w-4xl'
+      | 'xl:min-w-5xl'
+      | 'xl:min-w-6xl'
+      | 'xl:min-w-7xl'
+      | 'xl:min-w-8xl'
+      | 'xl:min-w-9xl'
+      | 'xl:min-w-full'
+      | 'xl:min-w-min'
+      | 'xl:min-w-max'
+      | 'xl:min-w-fit'
+      | 'xl:min-w-0'
+      | 'xl:min-w-4'
+      | 'xl:min-w-6'
+      | 'xl:min-w-8'
+      | 'xl:min-w-10'
+      | 'xl:min-w-12'
+      | 'xl:min-w-14'
+      | 'xl:min-w-16'
+      | 'xl:min-w-20'
+      | 'xl:min-w-24'
+      | 'xl:min-w-26'
+      | 'xl:min-w-32'
+      | 'xl:min-w-36'
+      | 'xl:min-w-40'
+      | 'xl:min-w-34'
+      | 'xl:min-w-48'
+      | 'xl:min-w-52'
+      | 'xl:min-w-56'
+      | 'xl:min-w-[10%]'
+      | 'xl:min-w-[20%]'
+      | 'xl:min-w-[30%]'
+      | 'xl:min-w-[40%]'
+      | 'xl:min-w-[50%]'
+      | 'xl:min-w-[60%]'
+      | 'xl:min-w-[70%]'
+      | 'xl:min-w-[80%]'
+      | 'xl:min-w-[90%]'
+    )[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IWidth".
+ */
+export type IWidth =
+  | (
+      | 'w-auto'
+      | 'w-xs'
+      | 'w-sm'
+      | 'w-md'
+      | 'w-lg'
+      | 'w-xl'
+      | 'w-2xl'
+      | 'w-3xl'
+      | 'w-4xl'
+      | 'w-5xl'
+      | 'w-6xl'
+      | 'w-7xl'
+      | 'w-8xl'
+      | 'w-9xl'
+      | 'w-full'
+      | 'w-min'
+      | 'w-max'
+      | 'w-fit'
+      | 'w-0'
+      | 'w-4'
+      | 'w-6'
+      | 'w-8'
+      | 'w-10'
+      | 'w-12'
+      | 'w-14'
+      | 'w-16'
+      | 'w-20'
+      | 'w-24'
+      | 'w-26'
+      | 'w-32'
+      | 'w-36'
+      | 'w-40'
+      | 'w-34'
+      | 'w-48'
+      | 'w-52'
+      | 'w-56'
+      | 'w-[10%]'
+      | 'w-[20%]'
+      | 'w-[30%]'
+      | 'w-[40%]'
+      | 'w-[50%]'
+      | 'w-[60%]'
+      | 'w-[70%]'
+      | 'w-[80%]'
+      | 'w-[90%]'
+      | 'md:w-auto'
+      | 'md:w-xs'
+      | 'md:w-sm'
+      | 'md:w-md'
+      | 'md:w-lg'
+      | 'md:w-xl'
+      | 'md:w-2xl'
+      | 'md:w-3xl'
+      | 'md:w-4xl'
+      | 'md:w-5xl'
+      | 'md:w-6xl'
+      | 'md:w-7xl'
+      | 'md:w-8xl'
+      | 'md:w-9xl'
+      | 'md:w-full'
+      | 'md:w-min'
+      | 'md:w-max'
+      | 'md:w-fit'
+      | 'md:w-0'
+      | 'md:w-4'
+      | 'md:w-6'
+      | 'md:w-8'
+      | 'md:w-10'
+      | 'md:w-12'
+      | 'md:w-14'
+      | 'md:w-16'
+      | 'md:w-20'
+      | 'md:w-24'
+      | 'md:w-26'
+      | 'md:w-32'
+      | 'md:w-36'
+      | 'md:w-40'
+      | 'md:w-34'
+      | 'md:w-48'
+      | 'md:w-52'
+      | 'md:w-56'
+      | 'md:w-[10%]'
+      | 'md:w-[20%]'
+      | 'md:w-[30%]'
+      | 'md:w-[40%]'
+      | 'md:w-[50%]'
+      | 'md:w-[60%]'
+      | 'md:w-[70%]'
+      | 'md:w-[80%]'
+      | 'md:w-[90%]'
+      | 'lg:w-auto'
+      | 'lg:w-xs'
+      | 'lg:w-sm'
+      | 'lg:w-md'
+      | 'lg:w-lg'
+      | 'lg:w-xl'
+      | 'lg:w-2xl'
+      | 'lg:w-3xl'
+      | 'lg:w-4xl'
+      | 'lg:w-5xl'
+      | 'lg:w-6xl'
+      | 'lg:w-7xl'
+      | 'lg:w-8xl'
+      | 'lg:w-9xl'
+      | 'lg:w-full'
+      | 'lg:w-min'
+      | 'lg:w-max'
+      | 'lg:w-fit'
+      | 'lg:w-0'
+      | 'lg:w-4'
+      | 'lg:w-6'
+      | 'lg:w-8'
+      | 'lg:w-10'
+      | 'lg:w-12'
+      | 'lg:w-14'
+      | 'lg:w-16'
+      | 'lg:w-20'
+      | 'lg:w-24'
+      | 'lg:w-26'
+      | 'lg:w-32'
+      | 'lg:w-36'
+      | 'lg:w-40'
+      | 'lg:w-34'
+      | 'lg:w-48'
+      | 'lg:w-52'
+      | 'lg:w-56'
+      | 'lg:w-[10%]'
+      | 'lg:w-[20%]'
+      | 'lg:w-[30%]'
+      | 'lg:w-[40%]'
+      | 'lg:w-[50%]'
+      | 'lg:w-[60%]'
+      | 'lg:w-[70%]'
+      | 'lg:w-[80%]'
+      | 'lg:w-[90%]'
+      | 'xl:w-auto'
+      | 'xl:w-xs'
+      | 'xl:w-sm'
+      | 'xl:w-md'
+      | 'xl:w-lg'
+      | 'xl:w-xl'
+      | 'xl:w-2xl'
+      | 'xl:w-3xl'
+      | 'xl:w-4xl'
+      | 'xl:w-5xl'
+      | 'xl:w-6xl'
+      | 'xl:w-7xl'
+      | 'xl:w-8xl'
+      | 'xl:w-9xl'
+      | 'xl:w-full'
+      | 'xl:w-min'
+      | 'xl:w-max'
+      | 'xl:w-fit'
+      | 'xl:w-0'
+      | 'xl:w-4'
+      | 'xl:w-6'
+      | 'xl:w-8'
+      | 'xl:w-10'
+      | 'xl:w-12'
+      | 'xl:w-14'
+      | 'xl:w-16'
+      | 'xl:w-20'
+      | 'xl:w-24'
+      | 'xl:w-26'
+      | 'xl:w-32'
+      | 'xl:w-36'
+      | 'xl:w-40'
+      | 'xl:w-34'
+      | 'xl:w-48'
+      | 'xl:w-52'
+      | 'xl:w-56'
+      | 'xl:w-[10%]'
+      | 'xl:w-[20%]'
+      | 'xl:w-[30%]'
+      | 'xl:w-[40%]'
+      | 'xl:w-[50%]'
+      | 'xl:w-[60%]'
+      | 'xl:w-[70%]'
+      | 'xl:w-[80%]'
+      | 'xl:w-[90%]'
+    )[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IPaddingX".
+ */
+export type IPaddingX =
+  | (
+      | 'px-0'
+      | 'px-1'
+      | 'px-2'
+      | 'px-3'
+      | 'px-4'
+      | 'px-5'
+      | 'px-6'
+      | 'px-8'
+      | 'px-10'
+      | 'px-12'
+      | 'px-14'
+      | 'px-16'
+      | 'px-20'
+      | 'px-24'
+      | 'px-28'
+      | 'px-32'
+      | 'md:px-0'
+      | 'md:px-1'
+      | 'md:px-2'
+      | 'md:px-3'
+      | 'md:px-4'
+      | 'md:px-5'
+      | 'md:px-6'
+      | 'md:px-8'
+      | 'md:px-10'
+      | 'md:px-12'
+      | 'md:px-14'
+      | 'md:px-16'
+      | 'md:px-20'
+      | 'md:px-24'
+      | 'md:px-28'
+      | 'md:px-32'
+      | 'lg:px-0'
+      | 'lg:px-1'
+      | 'lg:px-2'
+      | 'lg:px-3'
+      | 'lg:px-4'
+      | 'lg:px-5'
+      | 'lg:px-6'
+      | 'lg:px-8'
+      | 'lg:px-10'
+      | 'lg:px-12'
+      | 'lg:px-14'
+      | 'lg:px-16'
+      | 'lg:px-20'
+      | 'lg:px-24'
+      | 'lg:px-28'
+      | 'lg:px-32'
+      | 'xl:px-0'
+      | 'xl:px-1'
+      | 'xl:px-2'
+      | 'xl:px-3'
+      | 'xl:px-4'
+      | 'xl:px-5'
+      | 'xl:px-6'
+      | 'xl:px-8'
+      | 'xl:px-10'
+      | 'xl:px-12'
+      | 'xl:px-14'
+      | 'xl:px-16'
+      | 'xl:px-20'
+      | 'xl:px-24'
+      | 'xl:px-28'
+      | 'xl:px-32'
+    )[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IPaddingY".
+ */
+export type IPaddingY =
+  | (
+      | 'py-0'
+      | 'py-1'
+      | 'py-2'
+      | 'py-3'
+      | 'py-4'
+      | 'py-5'
+      | 'py-6'
+      | 'py-8'
+      | 'py-10'
+      | 'py-12'
+      | 'py-14'
+      | 'py-16'
+      | 'py-20'
+      | 'py-24'
+      | 'py-28'
+      | 'py-32'
+      | 'md:py-0'
+      | 'md:py-1'
+      | 'md:py-2'
+      | 'md:py-3'
+      | 'md:py-4'
+      | 'md:py-5'
+      | 'md:py-6'
+      | 'md:py-8'
+      | 'md:py-10'
+      | 'md:py-12'
+      | 'md:py-14'
+      | 'md:py-16'
+      | 'md:py-20'
+      | 'md:py-24'
+      | 'md:py-28'
+      | 'md:py-32'
+      | 'lg:py-0'
+      | 'lg:py-1'
+      | 'lg:py-2'
+      | 'lg:py-3'
+      | 'lg:py-4'
+      | 'lg:py-5'
+      | 'lg:py-6'
+      | 'lg:py-8'
+      | 'lg:py-10'
+      | 'lg:py-12'
+      | 'lg:py-14'
+      | 'lg:py-16'
+      | 'lg:py-20'
+      | 'lg:py-24'
+      | 'lg:py-28'
+      | 'lg:py-32'
+      | 'xl:py-0'
+      | 'xl:py-1'
+      | 'xl:py-2'
+      | 'xl:py-3'
+      | 'xl:py-4'
+      | 'xl:py-5'
+      | 'xl:py-6'
+      | 'xl:py-8'
+      | 'xl:py-10'
+      | 'xl:py-12'
+      | 'xl:py-14'
+      | 'xl:py-16'
+      | 'xl:py-20'
+      | 'xl:py-24'
+      | 'xl:py-28'
+      | 'xl:py-32'
+    )[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IJustify".
+ */
+export type IJustify =
+  | (
+      | 'justify-start'
+      | 'justify-center'
+      | 'justify-end'
+      | 'justify-between'
+      | 'justify-around'
+      | 'justify-evenly'
+      | 'md:justify-start'
+      | 'md:justify-center'
+      | 'md:justify-end'
+      | 'md:justify-between'
+      | 'md:justify-around'
+      | 'md:justify-evenly'
+      | 'lg:justify-start'
+      | 'lg:justify-center'
+      | 'lg:justify-end'
+      | 'lg:justify-between'
+      | 'lg:justify-around'
+      | 'lg:justify-evenly'
+      | 'xl:justify-start'
+      | 'xl:justify-center'
+      | 'xl:justify-end'
+      | 'xl:justify-between'
+      | 'xl:justify-around'
+      | 'xl:justify-evenly'
+    )[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IItems".
+ */
+export type IItems =
+  | (
+      | 'items-start'
+      | 'items-center'
+      | 'items-end'
+      | 'items-stretch'
+      | 'items-baseline'
+      | 'md:items-start'
+      | 'md:items-center'
+      | 'md:items-end'
+      | 'md:items-stretch'
+      | 'md:items-baseline'
+      | 'lg:items-start'
+      | 'lg:items-center'
+      | 'lg:items-end'
+      | 'lg:items-stretch'
+      | 'lg:items-baseline'
+      | 'xl:items-start'
+      | 'xl:items-center'
+      | 'xl:items-end'
+      | 'xl:items-stretch'
+      | 'xl:items-baseline'
+    )[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IFlexDirection".
+ */
+export type IFlexDirection =
+  | (
+      | 'flex-row'
+      | 'flex-row-reverse'
+      | 'flex-col'
+      | 'flex-col-reverse'
+      | 'flex-nowrap'
+      | 'flex-wrap'
+      | 'flex-wrap-reverse'
+      | 'md:flex-row'
+      | 'md:flex-row-reverse'
+      | 'md:flex-col'
+      | 'md:flex-col-reverse'
+      | 'md:flex-nowrap'
+      | 'md:flex-wrap'
+      | 'md:flex-wrap-reverse'
+      | 'lg:flex-row'
+      | 'lg:flex-row-reverse'
+      | 'lg:flex-col'
+      | 'lg:flex-col-reverse'
+      | 'lg:flex-nowrap'
+      | 'lg:flex-wrap'
+      | 'lg:flex-wrap-reverse'
+      | 'xl:flex-row'
+      | 'xl:flex-row-reverse'
+      | 'xl:flex-col'
+      | 'xl:flex-col-reverse'
+      | 'xl:flex-nowrap'
+      | 'xl:flex-wrap'
+      | 'xl:flex-wrap-reverse'
+    )[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IGapX".
+ */
+export type IGapX =
+  | (
+      | 'gap-x-0'
+      | 'gap-x-1'
+      | 'gap-x-2'
+      | 'gap-x-3'
+      | 'gap-x-4'
+      | 'gap-x-5'
+      | 'gap-x-6'
+      | 'gap-x-8'
+      | 'gap-x-10'
+      | 'gap-x-12'
+      | 'gap-x-14'
+      | 'gap-x-16'
+      | 'gap-x-20'
+      | 'gap-x-24'
+      | 'gap-x-28'
+      | 'gap-x-32'
+      | 'md:gap-x-0'
+      | 'md:gap-x-1'
+      | 'md:gap-x-2'
+      | 'md:gap-x-3'
+      | 'md:gap-x-4'
+      | 'md:gap-x-5'
+      | 'md:gap-x-6'
+      | 'md:gap-x-8'
+      | 'md:gap-x-10'
+      | 'md:gap-x-12'
+      | 'md:gap-x-14'
+      | 'md:gap-x-16'
+      | 'md:gap-x-20'
+      | 'md:gap-x-24'
+      | 'md:gap-x-28'
+      | 'md:gap-x-32'
+      | 'lg:gap-x-0'
+      | 'lg:gap-x-1'
+      | 'lg:gap-x-2'
+      | 'lg:gap-x-3'
+      | 'lg:gap-x-4'
+      | 'lg:gap-x-5'
+      | 'lg:gap-x-6'
+      | 'lg:gap-x-8'
+      | 'lg:gap-x-10'
+      | 'lg:gap-x-12'
+      | 'lg:gap-x-14'
+      | 'lg:gap-x-16'
+      | 'lg:gap-x-20'
+      | 'lg:gap-x-24'
+      | 'lg:gap-x-28'
+      | 'lg:gap-x-32'
+      | 'xl:gap-x-0'
+      | 'xl:gap-x-1'
+      | 'xl:gap-x-2'
+      | 'xl:gap-x-3'
+      | 'xl:gap-x-4'
+      | 'xl:gap-x-5'
+      | 'xl:gap-x-6'
+      | 'xl:gap-x-8'
+      | 'xl:gap-x-10'
+      | 'xl:gap-x-12'
+      | 'xl:gap-x-14'
+      | 'xl:gap-x-16'
+      | 'xl:gap-x-20'
+      | 'xl:gap-x-24'
+      | 'xl:gap-x-28'
+      | 'xl:gap-x-32'
+    )[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IGapY".
+ */
+export type IGapY =
+  | (
+      | 'gap-y-0'
+      | 'gap-y-1'
+      | 'gap-y-2'
+      | 'gap-y-3'
+      | 'gap-y-4'
+      | 'gap-y-5'
+      | 'gap-y-6'
+      | 'gap-y-8'
+      | 'gap-y-10'
+      | 'gap-y-12'
+      | 'gap-y-14'
+      | 'gap-y-16'
+      | 'gap-y-20'
+      | 'gap-y-24'
+      | 'gap-y-28'
+      | 'gap-y-32'
+      | 'md:gap-y-0'
+      | 'md:gap-y-1'
+      | 'md:gap-y-2'
+      | 'md:gap-y-3'
+      | 'md:gap-y-4'
+      | 'md:gap-y-5'
+      | 'md:gap-y-6'
+      | 'md:gap-y-8'
+      | 'md:gap-y-10'
+      | 'md:gap-y-12'
+      | 'md:gap-y-14'
+      | 'md:gap-y-16'
+      | 'md:gap-y-20'
+      | 'md:gap-y-24'
+      | 'md:gap-y-28'
+      | 'md:gap-y-32'
+      | 'lg:gap-y-0'
+      | 'lg:gap-y-1'
+      | 'lg:gap-y-2'
+      | 'lg:gap-y-3'
+      | 'lg:gap-y-4'
+      | 'lg:gap-y-5'
+      | 'lg:gap-y-6'
+      | 'lg:gap-y-8'
+      | 'lg:gap-y-10'
+      | 'lg:gap-y-12'
+      | 'lg:gap-y-14'
+      | 'lg:gap-y-16'
+      | 'lg:gap-y-20'
+      | 'lg:gap-y-24'
+      | 'lg:gap-y-28'
+      | 'lg:gap-y-32'
+      | 'xl:gap-y-0'
+      | 'xl:gap-y-1'
+      | 'xl:gap-y-2'
+      | 'xl:gap-y-3'
+      | 'xl:gap-y-4'
+      | 'xl:gap-y-5'
+      | 'xl:gap-y-6'
+      | 'xl:gap-y-8'
+      | 'xl:gap-y-10'
+      | 'xl:gap-y-12'
+      | 'xl:gap-y-14'
+      | 'xl:gap-y-16'
+      | 'xl:gap-y-20'
+      | 'xl:gap-y-24'
+      | 'xl:gap-y-28'
+      | 'xl:gap-y-32'
+    )[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IFlexItem".
+ */
+export type IFlexItem =
+  | (
+      | 'basis-auto'
+      | 'basis-1/2'
+      | 'basis-1/3'
+      | 'basis-2/3'
+      | 'basis-1/4'
+      | 'basis-3/4'
+      | 'basis-full'
+      | 'grow'
+      | 'grow-0'
+      | 'shrink'
+      | 'shrink-0'
+      | 'self-auto'
+      | 'self-start'
+      | 'self-center'
+      | 'self-end'
+      | 'self-stretch'
+      | 'self-baseline'
+      | 'md:basis-auto'
+      | 'md:basis-1/2'
+      | 'md:basis-1/3'
+      | 'md:basis-2/3'
+      | 'md:basis-1/4'
+      | 'md:basis-3/4'
+      | 'md:basis-full'
+      | 'md:grow'
+      | 'md:grow-0'
+      | 'md:shrink'
+      | 'md:shrink-0'
+      | 'md:self-auto'
+      | 'md:self-start'
+      | 'md:self-center'
+      | 'md:self-end'
+      | 'md:self-stretch'
+      | 'md:self-baseline'
+      | 'lg:basis-auto'
+      | 'lg:basis-1/2'
+      | 'lg:basis-1/3'
+      | 'lg:basis-2/3'
+      | 'lg:basis-1/4'
+      | 'lg:basis-3/4'
+      | 'lg:basis-full'
+      | 'lg:grow'
+      | 'lg:grow-0'
+      | 'lg:shrink'
+      | 'lg:shrink-0'
+      | 'lg:self-auto'
+      | 'lg:self-start'
+      | 'lg:self-center'
+      | 'lg:self-end'
+      | 'lg:self-stretch'
+      | 'lg:self-baseline'
+      | 'xl:basis-auto'
+      | 'xl:basis-1/2'
+      | 'xl:basis-1/3'
+      | 'xl:basis-2/3'
+      | 'xl:basis-1/4'
+      | 'xl:basis-3/4'
+      | 'xl:basis-full'
+      | 'xl:grow'
+      | 'xl:grow-0'
+      | 'xl:shrink'
+      | 'xl:shrink-0'
+      | 'xl:self-auto'
+      | 'xl:self-start'
+      | 'xl:self-center'
+      | 'xl:self-end'
+      | 'xl:self-stretch'
+      | 'xl:self-baseline'
+    )[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ITextAlign".
+ */
+export type ITextAlign =
+  | (
+      | 'text-left'
+      | 'text-center'
+      | 'text-right'
+      | 'text-start'
+      | 'text-end'
+      | 'text-justify'
+      | 'md:text-left'
+      | 'md:text-center'
+      | 'md:text-right'
+      | 'md:text-start'
+      | 'md:text-end'
+      | 'md:text-justify'
+      | 'lg:text-left'
+      | 'lg:text-center'
+      | 'lg:text-right'
+      | 'lg:text-start'
+      | 'lg:text-end'
+      | 'lg:text-justify'
+      | 'xl:text-left'
+      | 'xl:text-center'
+      | 'xl:text-right'
+      | 'xl:text-start'
+      | 'xl:text-end'
+      | 'xl:text-justify'
+    )[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ITabList".
+ */
+export type ITabList =
+  | {
+      Label: string;
+      banner?: (number | null) | Media;
+      ratioBanner: number;
+      tabItems?:
+        | {
+            headerLeft?: {
+              root: {
+                type: string;
+                children: {
+                  type: string;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
+            headerRight?: {
+              root: {
+                type: string;
+                children: {
+                  type: string;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
+            body?: {
+              root: {
+                type: string;
+                children: {
+                  type: string;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
+            media?: (number | null) | Media;
+            id?: string | null;
+          }[]
+        | null;
+      id?: string | null;
+    }[]
+  | null;
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ISocialContactPlatform".
+ */
+export type ISocialContactPlatform =
+  | 'email'
+  | 'phone'
+  | 'gmail'
+  | 'facebook'
+  | 'instagram'
+  | 'x'
+  | 'linkedin'
+  | 'youtube'
+  | 'tiktok'
+  | 'telegram'
+  | 'whatsapp'
+  | 'snapchat'
+  | 'pinterest'
+  | 'viber'
+  | 'skype'
+  | 'reddit'
+  | 'discord'
+  | 'github'
+  | 'gitlab'
+  | 'bitbucket'
+  | 'dribbble'
+  | 'behance'
+  | 'medium'
+  | 'other';
+/**
  * Supported timezones in IANA format.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -69,6 +1532,11 @@ export interface Config {
   collections: {
     users: User;
     media: Media;
+    pages: Page;
+    reviews: Review;
+    posts: Post;
+    forms: Form;
+    'form-submissions': FormSubmission;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -77,15 +1545,30 @@ export interface Config {
   collectionsSelect: {
     users: UsersSelect<false> | UsersSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
+    pages: PagesSelect<false> | PagesSelect<true>;
+    reviews: ReviewsSelect<false> | ReviewsSelect<true>;
+    posts: PostsSelect<false> | PostsSelect<true>;
+    forms: FormsSelect<false> | FormsSelect<true>;
+    'form-submissions': FormSubmissionsSelect<false> | FormSubmissionsSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
   };
   db: {
-    defaultIDType: string;
+    defaultIDType: number;
   };
-  globals: {};
-  globalsSelect: {};
+  globals: {
+    navbar: Navbar;
+    footer: Footer;
+    'posts-page': PostsPage;
+    site: Site;
+  };
+  globalsSelect: {
+    navbar: NavbarSelect<false> | NavbarSelect<true>;
+    footer: FooterSelect<false> | FooterSelect<true>;
+    'posts-page': PostsPageSelect<false> | PostsPageSelect<true>;
+    site: SiteSelect<false> | SiteSelect<true>;
+  };
   locale: null;
   user: User & {
     collection: 'users';
@@ -118,7 +1601,7 @@ export interface UserAuthOperations {
  * via the `definition` "users".
  */
 export interface User {
-  id: string;
+  id: number;
   updatedAt: string;
   createdAt: string;
   email: string;
@@ -142,7 +1625,7 @@ export interface User {
  * via the `definition` "media".
  */
 export interface Media {
-  id: string;
+  id: number;
   alt: string;
   updatedAt: string;
   createdAt: string;
@@ -155,26 +1638,1628 @@ export interface Media {
   height?: number | null;
   focalX?: number | null;
   focalY?: number | null;
+  sizes?: {
+    thumbnail?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    square?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    small?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    medium?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    large?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    xlarge?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    og?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+  };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "pages".
+ */
+export interface Page {
+  id: number;
+  /**
+   * The name shown in navigation links that point to this page.
+   */
+  label: string;
+  /**
+   * Use "home" for the homepage slug. All other slugs will be generated automatically.
+   */
+  slug: string;
+  layout?: {
+    blocks?: (HeroBlock | ContentBlock | HorizontalHeroBlock | IMediaBlockWithLabel | IRichTextBlock)[] | null;
+  };
+  meta?: {
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (number | null) | Media;
+    description?: string | null;
+    title?: string | null;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "HeroBlock".
+ */
+export interface HeroBlock {
+  /**
+   * The name shown in navigation links that point to this block.
+   */
+  label?: string | null;
+  /**
+   * Use "home" for the homepage slug. All other slugs will be generated automatically.
+   */
+  slug?: string | null;
+  backgroundType: 'image' | 'variant' | 'effect';
+  imageBackground?: (number | null) | Media;
+  backgroundVariant?: TBackgroundVariants;
+  backgroundEffect?:
+    | ('particles' | 'interactive-grid-pattern' | 'animated-grid-pattern' | 'glow-effect' | 'meteors')
+    | null;
+  contentPosition: 'center' | 'left' | 'right';
+  contentHeight: IContentHeight;
+  gapY?:
+    | (
+        | 'gap-y-0'
+        | 'gap-y-2'
+        | 'gap-y-4'
+        | 'gap-y-6'
+        | 'gap-y-8'
+        | 'gap-y-12'
+        | 'gap-y-14'
+        | 'gap-y-16'
+        | 'gap-y-20'
+        | 'gap-y-24'
+      )
+    | null;
+  spaceY?: ('auto' | 'space-y-0!' | 'space-y-2!' | 'space-y-4!' | 'space-y-6!' | 'space-y-8!' | 'space-y-12!') | null;
+  maxWidth?: IMaxWidth;
+  content?: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  links?: CMSLinks;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'hero';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CMSLink".
+ */
+export interface CMSLink {
+  type?: ('reference' | 'custom') | null;
+  newTab?: boolean | null;
+  /**
+   * Choose how the link should be rendered.
+   */
+  variant?: ('default' | 'outline' | 'secondary' | 'ghost' | 'link') | null;
+  reference?:
+    | ({
+        relationTo: 'pages';
+        value: number | Page;
+      } | null)
+    | ({
+        relationTo: 'posts';
+        value: number | Post;
+      } | null);
+  url?: string | null;
+  label: string;
+  /**
+   * Enable this only if the link is used in the navbar. If checked, and the link is an internal page, its labeled blocks (sections) will appear as dropdown items.
+   */
+  showBlocksInDropdown?: boolean | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "posts".
+ */
+export interface Post {
+  id: number;
+  /**
+   * Maximum length: 60 characters
+   */
+  shortTitle: string;
+  /**
+   * Maximum length: 150 characters
+   */
+  shortDescription: string;
+  content: {
+    content: {
+      root: {
+        type: string;
+        children: {
+          type: string;
+          version: number;
+          [k: string]: unknown;
+        }[];
+        direction: ('ltr' | 'rtl') | null;
+        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+        indent: number;
+        version: number;
+      };
+      [k: string]: unknown;
+    };
+  };
+  meta?: {
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (number | null) | Media;
+    description?: string | null;
+    title?: string | null;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ContentBlock".
+ */
+export interface ContentBlock {
+  /**
+   * The name shown in navigation links that point to this block.
+   */
+  label?: string | null;
+  /**
+   * Use "home" for the homepage slug. All other slugs will be generated automatically.
+   */
+  slug?: string | null;
+  contentHeight: IContentHeight;
+  backgroundVariant: TBackgroundVariants;
+  gapY?:
+    | (
+        | 'gap-y-0'
+        | 'gap-y-2'
+        | 'gap-y-4'
+        | 'gap-y-6'
+        | 'gap-y-8'
+        | 'gap-y-12'
+        | 'gap-y-14'
+        | 'gap-y-16'
+        | 'gap-y-20'
+        | 'gap-y-24'
+      )
+    | null;
+  blocks?:
+    | (
+        | IRichTextContent
+        | {
+            links?: CMSLinks;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'links-block';
+          }
+        | IGridBlock
+        | LogosBlock
+        | IReviewsBlock
+        | IAccordionBlock
+        | IScrollCardsBlock
+        | IFlexBlock
+        | IMediaBlock
+        | ITabsBlock
+        | IFormBlock
+      )[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'content';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IRichTextContent".
+ */
+export interface IRichTextContent {
+  paddingX?: ('px-0' | 'px-2' | 'px-4' | 'px-6' | 'px-8' | 'px-12') | null;
+  paddingY?: ('py-0' | 'py-2' | 'py-4' | 'py-6' | 'py-8' | 'py-12') | null;
+  variant: TBackgroundVariants;
+  spaceY?: ('auto' | 'space-y-0!' | 'space-y-2!' | 'space-y-4!' | 'space-y-6!' | 'space-y-8!' | 'space-y-12!') | null;
+  isBordered?: boolean | null;
+  maxWidth?: IMaxWidth;
+  content?: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'rich-text-content';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IGridBlock".
+ */
+export interface IGridBlock {
+  gapX?:
+    | (
+        | 'gap-x-0'
+        | 'gap-x-2'
+        | 'gap-x-4'
+        | 'gap-x-6'
+        | 'gap-x-8'
+        | 'gap-x-12'
+        | 'gap-x-14'
+        | 'gap-x-16'
+        | 'gap-x-20'
+        | 'gap-x-24'
+      )
+    | null;
+  gapY?:
+    | (
+        | 'gap-y-0'
+        | 'gap-y-2'
+        | 'gap-y-4'
+        | 'gap-y-6'
+        | 'gap-y-8'
+        | 'gap-y-12'
+        | 'gap-y-14'
+        | 'gap-y-16'
+        | 'gap-y-20'
+        | 'gap-y-24'
+      )
+    | null;
+  paddingX?: ('px-0' | 'px-2' | 'px-4' | 'px-6' | 'px-8' | 'px-12') | null;
+  paddingY?: ('py-0' | 'py-2' | 'py-4' | 'py-6' | 'py-8' | 'py-12') | null;
+  gridItemGap?:
+    | (
+        | 'gap-y-0'
+        | 'gap-y-2'
+        | 'gap-y-4'
+        | 'gap-y-6'
+        | 'gap-y-8'
+        | 'gap-y-12'
+        | 'gap-y-14'
+        | 'gap-y-16'
+        | 'gap-y-20'
+        | 'gap-y-24'
+      )
+    | null;
+  backgroundVariant?: TBackgroundVariants;
+  columns?: ('1' | '2' | '3' | '4') | null;
+  borderType?: ('none' | 'border' | 'animated-border') | null;
+  gridItems?: IGridItem;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'grid-block';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LogosBlock".
+ */
+export interface LogosBlock {
+  logos?: LogoBlock;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'logos-block';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IReviewsBlock".
+ */
+export interface IReviewsBlock {
+  reviews?: (number | Review)[] | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'reviews-block';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "reviews".
+ */
+export interface Review {
+  id: number;
+  avatar?: (number | null) | Media;
+  name: string;
+  rating: number;
+  title: string;
+  date: string;
+  description: string;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IAccordionBlock".
+ */
+export interface IAccordionBlock {
+  maxWidth?: IMaxWidth;
+  backgroundVariant: TBackgroundVariants;
+  paddingX?: ('px-0' | 'px-2' | 'px-4' | 'px-6' | 'px-8' | 'px-12') | null;
+  paddingY?: ('py-0' | 'py-2' | 'py-4' | 'py-6' | 'py-8' | 'py-12') | null;
+  isBordered?: boolean | null;
+  items?:
+    | {
+        title: string;
+        content: {
+          root: {
+            type: string;
+            children: {
+              type: string;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        };
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'accordion';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IScrollCardsBlock".
+ */
+export interface IScrollCardsBlock {
+  columns?: ('1' | '2' | '3' | '4') | null;
+  loop?: boolean | null;
+  rounded: 'rounded-none' | 'rounded-lg' | 'rounded-full';
+  objectFit: 'object-cover' | 'object-contain';
+  ratio: number;
+  isIcon?: boolean | null;
+  isBordered?: boolean | null;
+  spaceY?: ('auto' | 'space-y-0!' | 'space-y-2!' | 'space-y-4!' | 'space-y-6!' | 'space-y-8!' | 'space-y-12!') | null;
+  scrollItemGap?:
+    | ('gap-0' | 'gap-2' | 'gap-4' | 'gap-6' | 'gap-8' | 'gap-12' | 'gap-14' | 'gap-16' | 'gap-20' | 'gap-24')
+    | null;
+  backgroundVariant?: TBackgroundVariants;
+  linksPosition?: ('left' | 'center' | 'right') | null;
+  orientation?: ('horizontal' | 'vertical') | null;
+  scrollItems?: IScrollCardItem;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'scroll-cards-block';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IFlexBlock".
+ */
+export interface IFlexBlock {
+  columns?: ('1' | '2' | '3' | '4') | null;
+  rounded: 'rounded-none' | 'rounded-lg' | 'rounded-full';
+  objectFit: 'object-cover' | 'object-contain';
+  ratio: number;
+  isIcon?: boolean | null;
+  isBordered?: boolean | null;
+  spaceY?: ('auto' | 'space-y-0!' | 'space-y-2!' | 'space-y-4!' | 'space-y-6!' | 'space-y-8!' | 'space-y-12!') | null;
+  flexItemGap?:
+    | ('gap-0' | 'gap-2' | 'gap-4' | 'gap-6' | 'gap-8' | 'gap-12' | 'gap-14' | 'gap-16' | 'gap-20' | 'gap-24')
+    | null;
+  backgroundVariant?: TBackgroundVariants;
+  linksPosition?: ('left' | 'center' | 'right') | null;
+  orientation?: ('horizontal' | 'vertical') | null;
+  flexItems?: IFlexCardItem;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'flex-block';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IMediaBlock".
+ */
+export interface IMediaBlock {
+  containerSpaceX?: ISpaceX;
+  containerSpaceY?: ISpaceY;
+  'container-background'?: TBackgroundVariants;
+  display: IDisplay;
+  'container-max-width'?: IMaxWidth;
+  'container-min-width'?: IMinWidth;
+  'container-width'?: IWidth;
+  'container-padding-x'?: IPaddingX;
+  'container-padding-y'?: IPaddingY;
+  justify?: IJustify;
+  items?: IItems;
+  flexDirection?: IFlexDirection;
+  'container-gap-x'?: IGapX;
+  'container-gap-y'?: IGapY;
+  isBordered?: boolean | null;
+  isRounded?: boolean | null;
+  contentDisplay: IDisplay;
+  contentFlexDirection?: IFlexDirection;
+  'content-Justify'?: IJustify;
+  'content-align-items'?: IItems;
+  'content-flex-item'?: IFlexItem;
+  textAlign?: ITextAlign;
+  'content-gap-y'?: IGapY;
+  'content-background'?: TBackgroundVariants;
+  'content-max-width'?: IMaxWidth;
+  'content-min-width'?: IMinWidth;
+  'content-width'?: IWidth;
+  'content-padding-x'?: IPaddingX;
+  'content-padding-y'?: IPaddingY;
+  isBorderedContentContainer?: boolean | null;
+  isRoundedContentContainer?: boolean | null;
+  'media-flex-item'?: IFlexItem;
+  'media-max-width'?: IMaxWidth;
+  'media-min-width'?: IMinWidth;
+  'media-width'?: IWidth;
+  'media-padding-x'?: IPaddingX;
+  'media-padding-y'?: IPaddingY;
+  isBorderedMediaContainer?: boolean | null;
+  imageSize?: ('auto' | 'aspect-ratio') | null;
+  'media-rounded': 'rounded-none' | 'rounded-lg' | 'rounded-full';
+  objectFit: 'object-cover' | 'object-contain';
+  objectPosition:
+    | 'object-center'
+    | 'object-left'
+    | 'object-left-top'
+    | 'object-left-bottom'
+    | 'object-right'
+    | 'object-right-top'
+    | 'object-right-bottom'
+    | 'object-top'
+    | 'object-top-left'
+    | 'object-top-right'
+    | 'object-bottom'
+    | 'object-bottom-left'
+    | 'object-bottom-right';
+  ratio?: number | null;
+  media?: (number | null) | Media;
+  content?: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'media-block';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ITabsBlock".
+ */
+export interface ITabsBlock {
+  columns?: ('1' | '2' | '3' | '4') | null;
+  linksPosition?: ('center' | 'left' | 'right') | null;
+  rounded: 'rounded-none' | 'rounded-lg' | 'rounded-full';
+  objectFit: 'object-cover' | 'object-contain';
+  ratio: number;
+  isIcon?: boolean | null;
+  isBordered?: boolean | null;
+  flexItemGap?:
+    | ('gap-0' | 'gap-2' | 'gap-4' | 'gap-6' | 'gap-8' | 'gap-12' | 'gap-14' | 'gap-16' | 'gap-20' | 'gap-24')
+    | null;
+  backgroundVariant?: TBackgroundVariants;
+  justify?: IJustify;
+  items?: IItems;
+  headerLeftSpaceY?:
+    | ('auto' | 'space-y-0!' | 'space-y-2!' | 'space-y-4!' | 'space-y-6!' | 'space-y-8!' | 'space-y-12!')
+    | null;
+  bodySpaceY?:
+    | ('auto' | 'space-y-0!' | 'space-y-2!' | 'space-y-4!' | 'space-y-6!' | 'space-y-8!' | 'space-y-12!')
+    | null;
+  orientation?: ('horizontal' | 'vertical') | null;
+  tabList?: ITabList;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'tabs-block';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IFormBlock".
+ */
+export interface IFormBlock {
+  form: number | Form;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'form-block';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "forms".
+ */
+export interface Form {
+  id: number;
+  title: string;
+  fields?:
+    | (
+        | CheckboxFieldBlock
+        | CountryFieldBlock
+        | EmailFieldBlock
+        | MessageFieldBlock
+        | NumberFieldBlock
+        | SelectFieldBlock
+        | StateFieldBlock
+        | TextFieldBlock
+        | TextareaFieldBlock
+        | DateFieldBlock
+        | PhoneFieldBlock
+      )[]
+    | null;
+  submitButtonLabel?: string | null;
+  /**
+   * Choose whether to display an on-page message or redirect to a different page after they submit the form.
+   */
+  confirmationType?: ('message' | 'redirect') | null;
+  confirmationMessage?: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  redirect?: {
+    url: string;
+  };
+  /**
+   * Send custom emails when the form submits. Use comma separated lists to send the same email to multiple recipients. To reference a value from this form, wrap that field's name with double curly brackets, i.e. {{firstName}}. You can use a wildcard {{*}} to output all data and {{*:table}} to format it as an HTML table in the email.
+   */
+  emails?:
+    | {
+        emailTo?: string | null;
+        cc?: string | null;
+        bcc?: string | null;
+        replyTo?: string | null;
+        emailFrom?: string | null;
+        subject: string;
+        /**
+         * Enter the message that should be sent in this email.
+         */
+        message?: {
+          root: {
+            type: string;
+            children: {
+              type: string;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CheckboxFieldBlock".
+ */
+export interface CheckboxFieldBlock {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  required?: boolean | null;
+  defaultValue?: boolean | null;
+  richText?: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  description?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'checkbox';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CountryFieldBlock".
+ */
+export interface CountryFieldBlock {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  required?: boolean | null;
+  placeholder?: string | null;
+  description?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'country';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "EmailFieldBlock".
+ */
+export interface EmailFieldBlock {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  required?: boolean | null;
+  placeholder?: string | null;
+  description?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'email';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "MessageFieldBlock".
+ */
+export interface MessageFieldBlock {
+  message?: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'message';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "NumberFieldBlock".
+ */
+export interface NumberFieldBlock {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  defaultValue?: number | null;
+  required?: boolean | null;
+  placeholder?: string | null;
+  description?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'number';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "SelectFieldBlock".
+ */
+export interface SelectFieldBlock {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  defaultValue?: string | null;
+  placeholder?: string | null;
+  options?:
+    | {
+        label: string;
+        value: string;
+        id?: string | null;
+      }[]
+    | null;
+  required?: boolean | null;
+  description?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'select';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "StateFieldBlock".
+ */
+export interface StateFieldBlock {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  required?: boolean | null;
+  placeholder?: string | null;
+  description?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'state';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TextFieldBlock".
+ */
+export interface TextFieldBlock {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  defaultValue?: string | null;
+  required?: boolean | null;
+  placeholder?: string | null;
+  description?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'text';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TextareaFieldBlock".
+ */
+export interface TextareaFieldBlock {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  defaultValue?: string | null;
+  required?: boolean | null;
+  placeholder?: string | null;
+  description?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'textarea';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "DateFieldBlock".
+ */
+export interface DateFieldBlock {
+  name: string;
+  label?: string | null;
+  width?: number | null;
+  required?: boolean | null;
+  defaultValue?: string | null;
+  placeholder?: string | null;
+  description?: string | null;
+  disablePastDates?: boolean | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'date';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "PhoneFieldBlock".
+ */
+export interface PhoneFieldBlock {
+  name: string;
+  label?: string | null;
+  enabledCountries: (
+    | 'AC'
+    | 'AD'
+    | 'AE'
+    | 'AF'
+    | 'AG'
+    | 'AI'
+    | 'AL'
+    | 'AM'
+    | 'AO'
+    | 'AR'
+    | 'AS'
+    | 'AT'
+    | 'AU'
+    | 'AW'
+    | 'AX'
+    | 'AZ'
+    | 'BA'
+    | 'BB'
+    | 'BD'
+    | 'BE'
+    | 'BF'
+    | 'BG'
+    | 'BH'
+    | 'BI'
+    | 'BJ'
+    | 'BL'
+    | 'BM'
+    | 'BN'
+    | 'BO'
+    | 'BQ'
+    | 'BR'
+    | 'BS'
+    | 'BT'
+    | 'BW'
+    | 'BY'
+    | 'BZ'
+    | 'CA'
+    | 'CC'
+    | 'CD'
+    | 'CF'
+    | 'CG'
+    | 'CH'
+    | 'CI'
+    | 'CK'
+    | 'CL'
+    | 'CM'
+    | 'CN'
+    | 'CO'
+    | 'CR'
+    | 'CU'
+    | 'CV'
+    | 'CW'
+    | 'CX'
+    | 'CY'
+    | 'CZ'
+    | 'DE'
+    | 'DJ'
+    | 'DK'
+    | 'DM'
+    | 'DO'
+    | 'DZ'
+    | 'EC'
+    | 'EE'
+    | 'EG'
+    | 'EH'
+    | 'ER'
+    | 'ES'
+    | 'ET'
+    | 'FI'
+    | 'FJ'
+    | 'FK'
+    | 'FM'
+    | 'FO'
+    | 'FR'
+    | 'GA'
+    | 'GB'
+    | 'GD'
+    | 'GE'
+    | 'GF'
+    | 'GG'
+    | 'GH'
+    | 'GI'
+    | 'GL'
+    | 'GM'
+    | 'GN'
+    | 'GP'
+    | 'GQ'
+    | 'GR'
+    | 'GT'
+    | 'GU'
+    | 'GW'
+    | 'GY'
+    | 'HK'
+    | 'HN'
+    | 'HR'
+    | 'HT'
+    | 'HU'
+    | 'ID'
+    | 'IE'
+    | 'IL'
+    | 'IM'
+    | 'IN'
+    | 'IO'
+    | 'IQ'
+    | 'IR'
+    | 'IS'
+    | 'IT'
+    | 'JE'
+    | 'JM'
+    | 'JO'
+    | 'JP'
+    | 'KE'
+    | 'KG'
+    | 'KH'
+    | 'KI'
+    | 'KM'
+    | 'KN'
+    | 'KP'
+    | 'KR'
+    | 'KW'
+    | 'KY'
+    | 'KZ'
+    | 'LA'
+    | 'LB'
+    | 'LC'
+    | 'LI'
+    | 'LK'
+    | 'LR'
+    | 'LS'
+    | 'LT'
+    | 'LU'
+    | 'LV'
+    | 'LY'
+    | 'MA'
+    | 'MC'
+    | 'MD'
+    | 'ME'
+    | 'MF'
+    | 'MG'
+    | 'MH'
+    | 'MK'
+    | 'ML'
+    | 'MM'
+    | 'MN'
+    | 'MO'
+    | 'MP'
+    | 'MQ'
+    | 'MR'
+    | 'MS'
+    | 'MT'
+    | 'MU'
+    | 'MV'
+    | 'MW'
+    | 'MX'
+    | 'MY'
+    | 'MZ'
+    | 'NA'
+    | 'NC'
+    | 'NE'
+    | 'NF'
+    | 'NG'
+    | 'NI'
+    | 'NL'
+    | 'NO'
+    | 'NP'
+    | 'NR'
+    | 'NU'
+    | 'NZ'
+    | 'OM'
+    | 'PA'
+    | 'PE'
+    | 'PF'
+    | 'PG'
+    | 'PH'
+    | 'PK'
+    | 'PL'
+    | 'PM'
+    | 'PR'
+    | 'PS'
+    | 'PT'
+    | 'PW'
+    | 'PY'
+    | 'QA'
+    | 'RE'
+    | 'RO'
+    | 'RS'
+    | 'RU'
+    | 'RW'
+    | 'SA'
+    | 'SB'
+    | 'SC'
+    | 'SD'
+    | 'SE'
+    | 'SG'
+    | 'SH'
+    | 'SI'
+    | 'SJ'
+    | 'SK'
+    | 'SL'
+    | 'SM'
+    | 'SN'
+    | 'SO'
+    | 'SR'
+    | 'SS'
+    | 'ST'
+    | 'SV'
+    | 'SX'
+    | 'SY'
+    | 'SZ'
+    | 'TA'
+    | 'TC'
+    | 'TD'
+    | 'TG'
+    | 'TH'
+    | 'TJ'
+    | 'TK'
+    | 'TL'
+    | 'TM'
+    | 'TN'
+    | 'TO'
+    | 'TR'
+    | 'TT'
+    | 'TV'
+    | 'TW'
+    | 'TZ'
+    | 'UA'
+    | 'UG'
+    | 'US'
+    | 'UY'
+    | 'UZ'
+    | 'VA'
+    | 'VC'
+    | 'VE'
+    | 'VG'
+    | 'VI'
+    | 'VN'
+    | 'VU'
+    | 'WF'
+    | 'WS'
+    | 'XK'
+    | 'YE'
+    | 'YT'
+    | 'ZA'
+    | 'ZM'
+    | 'ZW'
+  )[];
+  defaultValue?:
+    | (
+        | 'AC'
+        | 'AD'
+        | 'AE'
+        | 'AF'
+        | 'AG'
+        | 'AI'
+        | 'AL'
+        | 'AM'
+        | 'AO'
+        | 'AR'
+        | 'AS'
+        | 'AT'
+        | 'AU'
+        | 'AW'
+        | 'AX'
+        | 'AZ'
+        | 'BA'
+        | 'BB'
+        | 'BD'
+        | 'BE'
+        | 'BF'
+        | 'BG'
+        | 'BH'
+        | 'BI'
+        | 'BJ'
+        | 'BL'
+        | 'BM'
+        | 'BN'
+        | 'BO'
+        | 'BQ'
+        | 'BR'
+        | 'BS'
+        | 'BT'
+        | 'BW'
+        | 'BY'
+        | 'BZ'
+        | 'CA'
+        | 'CC'
+        | 'CD'
+        | 'CF'
+        | 'CG'
+        | 'CH'
+        | 'CI'
+        | 'CK'
+        | 'CL'
+        | 'CM'
+        | 'CN'
+        | 'CO'
+        | 'CR'
+        | 'CU'
+        | 'CV'
+        | 'CW'
+        | 'CX'
+        | 'CY'
+        | 'CZ'
+        | 'DE'
+        | 'DJ'
+        | 'DK'
+        | 'DM'
+        | 'DO'
+        | 'DZ'
+        | 'EC'
+        | 'EE'
+        | 'EG'
+        | 'EH'
+        | 'ER'
+        | 'ES'
+        | 'ET'
+        | 'FI'
+        | 'FJ'
+        | 'FK'
+        | 'FM'
+        | 'FO'
+        | 'FR'
+        | 'GA'
+        | 'GB'
+        | 'GD'
+        | 'GE'
+        | 'GF'
+        | 'GG'
+        | 'GH'
+        | 'GI'
+        | 'GL'
+        | 'GM'
+        | 'GN'
+        | 'GP'
+        | 'GQ'
+        | 'GR'
+        | 'GT'
+        | 'GU'
+        | 'GW'
+        | 'GY'
+        | 'HK'
+        | 'HN'
+        | 'HR'
+        | 'HT'
+        | 'HU'
+        | 'ID'
+        | 'IE'
+        | 'IL'
+        | 'IM'
+        | 'IN'
+        | 'IO'
+        | 'IQ'
+        | 'IR'
+        | 'IS'
+        | 'IT'
+        | 'JE'
+        | 'JM'
+        | 'JO'
+        | 'JP'
+        | 'KE'
+        | 'KG'
+        | 'KH'
+        | 'KI'
+        | 'KM'
+        | 'KN'
+        | 'KP'
+        | 'KR'
+        | 'KW'
+        | 'KY'
+        | 'KZ'
+        | 'LA'
+        | 'LB'
+        | 'LC'
+        | 'LI'
+        | 'LK'
+        | 'LR'
+        | 'LS'
+        | 'LT'
+        | 'LU'
+        | 'LV'
+        | 'LY'
+        | 'MA'
+        | 'MC'
+        | 'MD'
+        | 'ME'
+        | 'MF'
+        | 'MG'
+        | 'MH'
+        | 'MK'
+        | 'ML'
+        | 'MM'
+        | 'MN'
+        | 'MO'
+        | 'MP'
+        | 'MQ'
+        | 'MR'
+        | 'MS'
+        | 'MT'
+        | 'MU'
+        | 'MV'
+        | 'MW'
+        | 'MX'
+        | 'MY'
+        | 'MZ'
+        | 'NA'
+        | 'NC'
+        | 'NE'
+        | 'NF'
+        | 'NG'
+        | 'NI'
+        | 'NL'
+        | 'NO'
+        | 'NP'
+        | 'NR'
+        | 'NU'
+        | 'NZ'
+        | 'OM'
+        | 'PA'
+        | 'PE'
+        | 'PF'
+        | 'PG'
+        | 'PH'
+        | 'PK'
+        | 'PL'
+        | 'PM'
+        | 'PR'
+        | 'PS'
+        | 'PT'
+        | 'PW'
+        | 'PY'
+        | 'QA'
+        | 'RE'
+        | 'RO'
+        | 'RS'
+        | 'RU'
+        | 'RW'
+        | 'SA'
+        | 'SB'
+        | 'SC'
+        | 'SD'
+        | 'SE'
+        | 'SG'
+        | 'SH'
+        | 'SI'
+        | 'SJ'
+        | 'SK'
+        | 'SL'
+        | 'SM'
+        | 'SN'
+        | 'SO'
+        | 'SR'
+        | 'SS'
+        | 'ST'
+        | 'SV'
+        | 'SX'
+        | 'SY'
+        | 'SZ'
+        | 'TA'
+        | 'TC'
+        | 'TD'
+        | 'TG'
+        | 'TH'
+        | 'TJ'
+        | 'TK'
+        | 'TL'
+        | 'TM'
+        | 'TN'
+        | 'TO'
+        | 'TR'
+        | 'TT'
+        | 'TV'
+        | 'TW'
+        | 'TZ'
+        | 'UA'
+        | 'UG'
+        | 'US'
+        | 'UY'
+        | 'UZ'
+        | 'VA'
+        | 'VC'
+        | 'VE'
+        | 'VG'
+        | 'VI'
+        | 'VN'
+        | 'VU'
+        | 'WF'
+        | 'WS'
+        | 'XK'
+        | 'YE'
+        | 'YT'
+        | 'ZA'
+        | 'ZM'
+        | 'ZW'
+      )
+    | null;
+  width?: number | null;
+  description?: string | null;
+  required?: boolean | null;
+  placeholder?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'phone';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "HorizontalHeroBlock".
+ */
+export interface HorizontalHeroBlock {
+  /**
+   * The name shown in navigation links that point to this block.
+   */
+  label?: string | null;
+  /**
+   * Use "home" for the homepage slug. All other slugs will be generated automatically.
+   */
+  slug?: string | null;
+  backgroundVariant: TBackgroundVariants;
+  contentHeight: IContentHeight;
+  revers?: boolean | null;
+  media: number | Media;
+  imageSize?: ('auto' | 'aspect-ratio') | null;
+  ratio?: number | null;
+  rounded: 'rounded-none' | 'rounded-lg' | 'rounded-full';
+  objectFit: 'object-cover' | 'object-contain';
+  objectPosition:
+    | 'object-center'
+    | 'object-left'
+    | 'object-left-top'
+    | 'object-left-bottom'
+    | 'object-right'
+    | 'object-right-top'
+    | 'object-right-bottom'
+    | 'object-top'
+    | 'object-top-left'
+    | 'object-top-right'
+    | 'object-bottom'
+    | 'object-bottom-left'
+    | 'object-bottom-right';
+  gapY?:
+    | (
+        | 'gap-y-0'
+        | 'gap-y-2'
+        | 'gap-y-4'
+        | 'gap-y-6'
+        | 'gap-y-8'
+        | 'gap-y-12'
+        | 'gap-y-14'
+        | 'gap-y-16'
+        | 'gap-y-20'
+        | 'gap-y-24'
+      )
+    | null;
+  spaceY?: ('auto' | 'space-y-0!' | 'space-y-2!' | 'space-y-4!' | 'space-y-6!' | 'space-y-8!' | 'space-y-12!') | null;
+  content?: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  links?: CMSLinks;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'horizontal-hero';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IMediaBlockWithLabel".
+ */
+export interface IMediaBlockWithLabel {
+  /**
+   * The name shown in navigation links that point to this block.
+   */
+  label?: string | null;
+  /**
+   * Use "home" for the homepage slug. All other slugs will be generated automatically.
+   */
+  slug?: string | null;
+  containerSpaceX?: ISpaceX;
+  containerSpaceY?: ISpaceY;
+  'container-background'?: TBackgroundVariants;
+  display: IDisplay;
+  'container-max-width'?: IMaxWidth;
+  'container-min-width'?: IMinWidth;
+  'container-width'?: IWidth;
+  'container-padding-x'?: IPaddingX;
+  'container-padding-y'?: IPaddingY;
+  justify?: IJustify;
+  items?: IItems;
+  flexDirection?: IFlexDirection;
+  'container-gap-x'?: IGapX;
+  'container-gap-y'?: IGapY;
+  isBordered?: boolean | null;
+  isRounded?: boolean | null;
+  contentDisplay: IDisplay;
+  contentFlexDirection?: IFlexDirection;
+  'content-Justify'?: IJustify;
+  'content-align-items'?: IItems;
+  'content-flex-item'?: IFlexItem;
+  textAlign?: ITextAlign;
+  'content-gap-y'?: IGapY;
+  'content-background'?: TBackgroundVariants;
+  'content-max-width'?: IMaxWidth;
+  'content-min-width'?: IMinWidth;
+  'content-width'?: IWidth;
+  'content-padding-x'?: IPaddingX;
+  'content-padding-y'?: IPaddingY;
+  isBorderedContentContainer?: boolean | null;
+  isRoundedContentContainer?: boolean | null;
+  'media-flex-item'?: IFlexItem;
+  'media-max-width'?: IMaxWidth;
+  'media-min-width'?: IMinWidth;
+  'media-width'?: IWidth;
+  'media-padding-x'?: IPaddingX;
+  'media-padding-y'?: IPaddingY;
+  isBorderedMediaContainer?: boolean | null;
+  imageSize?: ('auto' | 'aspect-ratio') | null;
+  'media-rounded': 'rounded-none' | 'rounded-lg' | 'rounded-full';
+  objectFit: 'object-cover' | 'object-contain';
+  objectPosition:
+    | 'object-center'
+    | 'object-left'
+    | 'object-left-top'
+    | 'object-left-bottom'
+    | 'object-right'
+    | 'object-right-top'
+    | 'object-right-bottom'
+    | 'object-top'
+    | 'object-top-left'
+    | 'object-top-right'
+    | 'object-bottom'
+    | 'object-bottom-left'
+    | 'object-bottom-right';
+  ratio?: number | null;
+  media?: (number | null) | Media;
+  content?: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'media-block';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IRichTextBlock".
+ */
+export interface IRichTextBlock {
+  /**
+   * The name shown in navigation links that point to this block.
+   */
+  label?: string | null;
+  /**
+   * Use "home" for the homepage slug. All other slugs will be generated automatically.
+   */
+  slug?: string | null;
+  paddingX?: ('px-0' | 'px-2' | 'px-4' | 'px-6' | 'px-8' | 'px-12') | null;
+  paddingY?: ('py-0' | 'py-2' | 'py-4' | 'py-6' | 'py-8' | 'py-12') | null;
+  variant: TBackgroundVariants;
+  spaceY?: ('auto' | 'space-y-0!' | 'space-y-2!' | 'space-y-4!' | 'space-y-6!' | 'space-y-8!' | 'space-y-12!') | null;
+  isBordered?: boolean | null;
+  maxWidth?: IMaxWidth;
+  content: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'rich-text-block';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "form-submissions".
+ */
+export interface FormSubmission {
+  id: number;
+  form: number | Form;
+  submissionData?:
+    | {
+        field: string;
+        value: string;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-locked-documents".
  */
 export interface PayloadLockedDocument {
-  id: string;
+  id: number;
   document?:
     | ({
         relationTo: 'users';
-        value: string | User;
+        value: number | User;
       } | null)
     | ({
         relationTo: 'media';
-        value: string | Media;
+        value: number | Media;
+      } | null)
+    | ({
+        relationTo: 'pages';
+        value: number | Page;
+      } | null)
+    | ({
+        relationTo: 'reviews';
+        value: number | Review;
+      } | null)
+    | ({
+        relationTo: 'posts';
+        value: number | Post;
+      } | null)
+    | ({
+        relationTo: 'forms';
+        value: number | Form;
+      } | null)
+    | ({
+        relationTo: 'form-submissions';
+        value: number | FormSubmission;
       } | null);
   globalSlug?: string | null;
   user: {
     relationTo: 'users';
-    value: string | User;
+    value: number | User;
   };
   updatedAt: string;
   createdAt: string;
@@ -184,10 +3269,10 @@ export interface PayloadLockedDocument {
  * via the `definition` "payload-preferences".
  */
 export interface PayloadPreference {
-  id: string;
+  id: number;
   user: {
     relationTo: 'users';
-    value: string | User;
+    value: number | User;
   };
   key?: string | null;
   value?:
@@ -207,7 +3292,7 @@ export interface PayloadPreference {
  * via the `definition` "payload-migrations".
  */
 export interface PayloadMigration {
-  id: string;
+  id: number;
   name?: string | null;
   batch?: number | null;
   updatedAt: string;
@@ -252,6 +3337,826 @@ export interface MediaSelect<T extends boolean = true> {
   height?: T;
   focalX?: T;
   focalY?: T;
+  sizes?:
+    | T
+    | {
+        thumbnail?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        square?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        small?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        medium?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        large?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        xlarge?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        og?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+      };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "pages_select".
+ */
+export interface PagesSelect<T extends boolean = true> {
+  label?: T;
+  slug?: T;
+  layout?:
+    | T
+    | {
+        blocks?:
+          | T
+          | {
+              hero?: T | HeroBlockSelect<T>;
+              content?: T | ContentBlockSelect<T>;
+              'horizontal-hero'?: T | HorizontalHeroBlockSelect<T>;
+              'media-block'?: T | IMediaBlockWithLabelSelect<T>;
+              'rich-text-block'?: T | IRichTextBlockSelect<T>;
+            };
+      };
+  meta?:
+    | T
+    | {
+        image?: T;
+        description?: T;
+        title?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "HeroBlock_select".
+ */
+export interface HeroBlockSelect<T extends boolean = true> {
+  label?: T;
+  slug?: T;
+  backgroundType?: T;
+  imageBackground?: T;
+  backgroundVariant?: T;
+  backgroundEffect?: T;
+  contentPosition?: T;
+  contentHeight?: T;
+  gapY?: T;
+  spaceY?: T;
+  maxWidth?: T;
+  content?: T;
+  links?: T | CMSLinksSelect<T>;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CMSLinks_select".
+ */
+export interface CMSLinksSelect<T extends boolean = true> {
+  link?: T | CMSLinkSelect<T>;
+  id?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CMSLink_select".
+ */
+export interface CMSLinkSelect<T extends boolean = true> {
+  type?: T;
+  newTab?: T;
+  variant?: T;
+  reference?: T;
+  url?: T;
+  label?: T;
+  showBlocksInDropdown?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ContentBlock_select".
+ */
+export interface ContentBlockSelect<T extends boolean = true> {
+  label?: T;
+  slug?: T;
+  contentHeight?: T;
+  backgroundVariant?: T;
+  gapY?: T;
+  blocks?:
+    | T
+    | {
+        'rich-text-content'?: T | IRichTextContentSelect<T>;
+        'links-block'?:
+          | T
+          | {
+              links?: T | CMSLinksSelect<T>;
+              id?: T;
+              blockName?: T;
+            };
+        'grid-block'?: T | IGridBlockSelect<T>;
+        'logos-block'?: T | LogosBlockSelect<T>;
+        'reviews-block'?: T | IReviewsBlockSelect<T>;
+        accordion?: T | IAccordionBlockSelect<T>;
+        'scroll-cards-block'?: T | IScrollCardsBlockSelect<T>;
+        'flex-block'?: T | IFlexBlockSelect<T>;
+        'media-block'?: T | IMediaBlockSelect<T>;
+        'tabs-block'?: T | ITabsBlockSelect<T>;
+        'form-block'?: T | IFormBlockSelect<T>;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IRichTextContent_select".
+ */
+export interface IRichTextContentSelect<T extends boolean = true> {
+  paddingX?: T;
+  paddingY?: T;
+  variant?: T;
+  spaceY?: T;
+  isBordered?: T;
+  maxWidth?: T;
+  content?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IGridBlock_select".
+ */
+export interface IGridBlockSelect<T extends boolean = true> {
+  gapX?: T;
+  gapY?: T;
+  paddingX?: T;
+  paddingY?: T;
+  gridItemGap?: T;
+  backgroundVariant?: T;
+  columns?: T;
+  borderType?: T;
+  gridItems?: T | IGridItemSelect<T>;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IGridItem_select".
+ */
+export interface IGridItemSelect<T extends boolean = true> {
+  rows?:
+    | T
+    | {
+        progress?:
+          | T
+          | {
+              progress?: T;
+              paddingX?: T;
+              paddingY?: T;
+              id?: T;
+              blockName?: T;
+            };
+        'card-media'?:
+          | T
+          | {
+              rounded?: T;
+              objectFit?: T;
+              objectPosition?: T;
+              imageSize?: T;
+              ratio?: T;
+              image?: T;
+              id?: T;
+              blockName?: T;
+            };
+        links?:
+          | T
+          | {
+              links?: T | CMSLinksSelect<T>;
+              id?: T;
+              blockName?: T;
+            };
+        'rich-text-content'?: T | IRichTextContentSelect<T>;
+      };
+  id?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LogosBlock_select".
+ */
+export interface LogosBlockSelect<T extends boolean = true> {
+  logos?: T | LogoBlockSelect<T>;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "LogoBlock_select".
+ */
+export interface LogoBlockSelect<T extends boolean = true> {
+  url?: T;
+  image?: T;
+  id?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IReviewsBlock_select".
+ */
+export interface IReviewsBlockSelect<T extends boolean = true> {
+  reviews?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IAccordionBlock_select".
+ */
+export interface IAccordionBlockSelect<T extends boolean = true> {
+  maxWidth?: T;
+  backgroundVariant?: T;
+  paddingX?: T;
+  paddingY?: T;
+  isBordered?: T;
+  items?:
+    | T
+    | {
+        title?: T;
+        content?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IScrollCardsBlock_select".
+ */
+export interface IScrollCardsBlockSelect<T extends boolean = true> {
+  columns?: T;
+  loop?: T;
+  rounded?: T;
+  objectFit?: T;
+  ratio?: T;
+  isIcon?: T;
+  isBordered?: T;
+  spaceY?: T;
+  scrollItemGap?: T;
+  backgroundVariant?: T;
+  linksPosition?: T;
+  orientation?: T;
+  scrollItems?: T | IScrollCardItemSelect<T>;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IScrollCardItem_select".
+ */
+export interface IScrollCardItemSelect<T extends boolean = true> {
+  image?: T;
+  content?: T;
+  links?: T | CMSLinksSelect<T>;
+  id?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IFlexBlock_select".
+ */
+export interface IFlexBlockSelect<T extends boolean = true> {
+  columns?: T;
+  rounded?: T;
+  objectFit?: T;
+  ratio?: T;
+  isIcon?: T;
+  isBordered?: T;
+  spaceY?: T;
+  flexItemGap?: T;
+  backgroundVariant?: T;
+  linksPosition?: T;
+  orientation?: T;
+  flexItems?: T | IFlexCardItemSelect<T>;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IFlexCardItem_select".
+ */
+export interface IFlexCardItemSelect<T extends boolean = true> {
+  image?: T;
+  content?: T;
+  links?: T | CMSLinksSelect<T>;
+  id?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IMediaBlock_select".
+ */
+export interface IMediaBlockSelect<T extends boolean = true> {
+  containerSpaceX?: T;
+  containerSpaceY?: T;
+  'container-background'?: T;
+  display?: T;
+  'container-max-width'?: T;
+  'container-min-width'?: T;
+  'container-width'?: T;
+  'container-padding-x'?: T;
+  'container-padding-y'?: T;
+  justify?: T;
+  items?: T;
+  flexDirection?: T;
+  'container-gap-x'?: T;
+  'container-gap-y'?: T;
+  isBordered?: T;
+  isRounded?: T;
+  contentDisplay?: T;
+  contentFlexDirection?: T;
+  'content-Justify'?: T;
+  'content-align-items'?: T;
+  'content-flex-item'?: T;
+  textAlign?: T;
+  'content-gap-y'?: T;
+  'content-background'?: T;
+  'content-max-width'?: T;
+  'content-min-width'?: T;
+  'content-width'?: T;
+  'content-padding-x'?: T;
+  'content-padding-y'?: T;
+  isBorderedContentContainer?: T;
+  isRoundedContentContainer?: T;
+  'media-flex-item'?: T;
+  'media-max-width'?: T;
+  'media-min-width'?: T;
+  'media-width'?: T;
+  'media-padding-x'?: T;
+  'media-padding-y'?: T;
+  isBorderedMediaContainer?: T;
+  imageSize?: T;
+  'media-rounded'?: T;
+  objectFit?: T;
+  objectPosition?: T;
+  ratio?: T;
+  media?: T;
+  content?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ITabsBlock_select".
+ */
+export interface ITabsBlockSelect<T extends boolean = true> {
+  columns?: T;
+  linksPosition?: T;
+  rounded?: T;
+  objectFit?: T;
+  ratio?: T;
+  isIcon?: T;
+  isBordered?: T;
+  flexItemGap?: T;
+  backgroundVariant?: T;
+  justify?: T;
+  items?: T;
+  headerLeftSpaceY?: T;
+  bodySpaceY?: T;
+  orientation?: T;
+  tabList?: T | ITabListSelect<T>;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ITabList_select".
+ */
+export interface ITabListSelect<T extends boolean = true> {
+  Label?: T;
+  banner?: T;
+  ratioBanner?: T;
+  tabItems?:
+    | T
+    | {
+        headerLeft?: T;
+        headerRight?: T;
+        body?: T;
+        media?: T;
+        id?: T;
+      };
+  id?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IFormBlock_select".
+ */
+export interface IFormBlockSelect<T extends boolean = true> {
+  form?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "HorizontalHeroBlock_select".
+ */
+export interface HorizontalHeroBlockSelect<T extends boolean = true> {
+  label?: T;
+  slug?: T;
+  backgroundVariant?: T;
+  contentHeight?: T;
+  revers?: T;
+  media?: T;
+  imageSize?: T;
+  ratio?: T;
+  rounded?: T;
+  objectFit?: T;
+  objectPosition?: T;
+  gapY?: T;
+  spaceY?: T;
+  content?: T;
+  links?: T | CMSLinksSelect<T>;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IMediaBlockWithLabel_select".
+ */
+export interface IMediaBlockWithLabelSelect<T extends boolean = true> {
+  label?: T;
+  slug?: T;
+  containerSpaceX?: T;
+  containerSpaceY?: T;
+  'container-background'?: T;
+  display?: T;
+  'container-max-width'?: T;
+  'container-min-width'?: T;
+  'container-width'?: T;
+  'container-padding-x'?: T;
+  'container-padding-y'?: T;
+  justify?: T;
+  items?: T;
+  flexDirection?: T;
+  'container-gap-x'?: T;
+  'container-gap-y'?: T;
+  isBordered?: T;
+  isRounded?: T;
+  contentDisplay?: T;
+  contentFlexDirection?: T;
+  'content-Justify'?: T;
+  'content-align-items'?: T;
+  'content-flex-item'?: T;
+  textAlign?: T;
+  'content-gap-y'?: T;
+  'content-background'?: T;
+  'content-max-width'?: T;
+  'content-min-width'?: T;
+  'content-width'?: T;
+  'content-padding-x'?: T;
+  'content-padding-y'?: T;
+  isBorderedContentContainer?: T;
+  isRoundedContentContainer?: T;
+  'media-flex-item'?: T;
+  'media-max-width'?: T;
+  'media-min-width'?: T;
+  'media-width'?: T;
+  'media-padding-x'?: T;
+  'media-padding-y'?: T;
+  isBorderedMediaContainer?: T;
+  imageSize?: T;
+  'media-rounded'?: T;
+  objectFit?: T;
+  objectPosition?: T;
+  ratio?: T;
+  media?: T;
+  content?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IRichTextBlock_select".
+ */
+export interface IRichTextBlockSelect<T extends boolean = true> {
+  label?: T;
+  slug?: T;
+  paddingX?: T;
+  paddingY?: T;
+  variant?: T;
+  spaceY?: T;
+  isBordered?: T;
+  maxWidth?: T;
+  content?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "reviews_select".
+ */
+export interface ReviewsSelect<T extends boolean = true> {
+  avatar?: T;
+  name?: T;
+  rating?: T;
+  title?: T;
+  date?: T;
+  description?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "posts_select".
+ */
+export interface PostsSelect<T extends boolean = true> {
+  shortTitle?: T;
+  shortDescription?: T;
+  content?:
+    | T
+    | {
+        content?: T;
+      };
+  meta?:
+    | T
+    | {
+        image?: T;
+        description?: T;
+        title?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "forms_select".
+ */
+export interface FormsSelect<T extends boolean = true> {
+  title?: T;
+  fields?:
+    | T
+    | {
+        checkbox?: T | CheckboxFieldBlockSelect<T>;
+        country?: T | CountryFieldBlockSelect<T>;
+        email?: T | EmailFieldBlockSelect<T>;
+        message?: T | MessageFieldBlockSelect<T>;
+        number?: T | NumberFieldBlockSelect<T>;
+        select?: T | SelectFieldBlockSelect<T>;
+        state?: T | StateFieldBlockSelect<T>;
+        text?: T | TextFieldBlockSelect<T>;
+        textarea?: T | TextareaFieldBlockSelect<T>;
+        date?: T | DateFieldBlockSelect<T>;
+        phone?: T | PhoneFieldBlockSelect<T>;
+      };
+  submitButtonLabel?: T;
+  confirmationType?: T;
+  confirmationMessage?: T;
+  redirect?:
+    | T
+    | {
+        url?: T;
+      };
+  emails?:
+    | T
+    | {
+        emailTo?: T;
+        cc?: T;
+        bcc?: T;
+        replyTo?: T;
+        emailFrom?: T;
+        subject?: T;
+        message?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CheckboxFieldBlock_select".
+ */
+export interface CheckboxFieldBlockSelect<T extends boolean = true> {
+  name?: T;
+  label?: T;
+  width?: T;
+  required?: T;
+  defaultValue?: T;
+  richText?: T;
+  description?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CountryFieldBlock_select".
+ */
+export interface CountryFieldBlockSelect<T extends boolean = true> {
+  name?: T;
+  label?: T;
+  width?: T;
+  required?: T;
+  placeholder?: T;
+  description?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "EmailFieldBlock_select".
+ */
+export interface EmailFieldBlockSelect<T extends boolean = true> {
+  name?: T;
+  label?: T;
+  width?: T;
+  required?: T;
+  placeholder?: T;
+  description?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "MessageFieldBlock_select".
+ */
+export interface MessageFieldBlockSelect<T extends boolean = true> {
+  message?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "NumberFieldBlock_select".
+ */
+export interface NumberFieldBlockSelect<T extends boolean = true> {
+  name?: T;
+  label?: T;
+  width?: T;
+  defaultValue?: T;
+  required?: T;
+  placeholder?: T;
+  description?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "SelectFieldBlock_select".
+ */
+export interface SelectFieldBlockSelect<T extends boolean = true> {
+  name?: T;
+  label?: T;
+  width?: T;
+  defaultValue?: T;
+  placeholder?: T;
+  options?:
+    | T
+    | {
+        label?: T;
+        value?: T;
+        id?: T;
+      };
+  required?: T;
+  description?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "StateFieldBlock_select".
+ */
+export interface StateFieldBlockSelect<T extends boolean = true> {
+  name?: T;
+  label?: T;
+  width?: T;
+  required?: T;
+  placeholder?: T;
+  description?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TextFieldBlock_select".
+ */
+export interface TextFieldBlockSelect<T extends boolean = true> {
+  name?: T;
+  label?: T;
+  width?: T;
+  defaultValue?: T;
+  required?: T;
+  placeholder?: T;
+  description?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TextareaFieldBlock_select".
+ */
+export interface TextareaFieldBlockSelect<T extends boolean = true> {
+  name?: T;
+  label?: T;
+  width?: T;
+  defaultValue?: T;
+  required?: T;
+  placeholder?: T;
+  description?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "DateFieldBlock_select".
+ */
+export interface DateFieldBlockSelect<T extends boolean = true> {
+  name?: T;
+  label?: T;
+  width?: T;
+  required?: T;
+  defaultValue?: T;
+  placeholder?: T;
+  description?: T;
+  disablePastDates?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "PhoneFieldBlock_select".
+ */
+export interface PhoneFieldBlockSelect<T extends boolean = true> {
+  name?: T;
+  label?: T;
+  enabledCountries?: T;
+  defaultValue?: T;
+  width?: T;
+  description?: T;
+  required?: T;
+  placeholder?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "form-submissions_select".
+ */
+export interface FormSubmissionsSelect<T extends boolean = true> {
+  form?: T;
+  submissionData?:
+    | T
+    | {
+        field?: T;
+        value?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -284,6 +4189,220 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
   batch?: T;
   updatedAt?: T;
   createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "navbar".
+ */
+export interface Navbar {
+  id: number;
+  logoBase?: (number | null) | Media;
+  logoDark?: (number | null) | Media;
+  links?: CMSLinks;
+  callToAction?: CMSLinks;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "footer".
+ */
+export interface Footer {
+  id: number;
+  maxWidth?: IMaxWidth;
+  gapY?: IGapY;
+  footerBlocks?: (IRichTextContent | IFooterLinks | ISocialMediaFooterBlock)[] | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IFooterLinks".
+ */
+export interface IFooterLinks {
+  links?: CMSLinks;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'links';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ISocialMediaFooterBlock".
+ */
+export interface ISocialMediaFooterBlock {
+  items?:
+    | {
+        platformName: ISocialContactPlatform;
+        url: string;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'socialMedia';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "posts-page".
+ */
+export interface PostsPage {
+  id: number;
+  content: {
+    cardLinkLabel?: string | null;
+    paddingX?: ('px-0' | 'px-2' | 'px-4' | 'px-6' | 'px-8' | 'px-12') | null;
+    paddingY?: ('py-0' | 'py-2' | 'py-4' | 'py-6' | 'py-8' | 'py-12') | null;
+    variant: TBackgroundVariants;
+    spaceY?: ('auto' | 'space-y-0!' | 'space-y-2!' | 'space-y-4!' | 'space-y-6!' | 'space-y-8!' | 'space-y-12!') | null;
+    isBordered?: boolean | null;
+    maxWidth?: IMaxWidth;
+    content?: {
+      root: {
+        type: string;
+        children: {
+          type: string;
+          version: number;
+          [k: string]: unknown;
+        }[];
+        direction: ('ltr' | 'rtl') | null;
+        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+        indent: number;
+        version: number;
+      };
+      [k: string]: unknown;
+    } | null;
+  };
+  meta?: {
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (number | null) | Media;
+    description?: string | null;
+    title?: string | null;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "site".
+ */
+export interface Site {
+  id: number;
+  favicon?: (number | null) | Media;
+  googleVerificationCode?: string | null;
+  googleTagManagerId?: string | null;
+  googleAnalyticsID?: string | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "navbar_select".
+ */
+export interface NavbarSelect<T extends boolean = true> {
+  logoBase?: T;
+  logoDark?: T;
+  links?: T | CMSLinksSelect<T>;
+  callToAction?: T | CMSLinksSelect<T>;
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "footer_select".
+ */
+export interface FooterSelect<T extends boolean = true> {
+  maxWidth?: T;
+  gapY?: T;
+  footerBlocks?:
+    | T
+    | {
+        'rich-text-content'?: T | IRichTextContentSelect<T>;
+        links?: T | IFooterLinksSelect<T>;
+        socialMedia?: T | ISocialMediaFooterBlockSelect<T>;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IFooterLinks_select".
+ */
+export interface IFooterLinksSelect<T extends boolean = true> {
+  links?: T | CMSLinksSelect<T>;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ISocialMediaFooterBlock_select".
+ */
+export interface ISocialMediaFooterBlockSelect<T extends boolean = true> {
+  items?:
+    | T
+    | {
+        platformName?: T;
+        url?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "posts-page_select".
+ */
+export interface PostsPageSelect<T extends boolean = true> {
+  content?:
+    | T
+    | {
+        cardLinkLabel?: T;
+        paddingX?: T;
+        paddingY?: T;
+        variant?: T;
+        spaceY?: T;
+        isBordered?: T;
+        maxWidth?: T;
+        content?: T;
+      };
+  meta?:
+    | T
+    | {
+        image?: T;
+        description?: T;
+        title?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "site_select".
+ */
+export interface SiteSelect<T extends boolean = true> {
+  favicon?: T;
+  googleVerificationCode?: T;
+  googleTagManagerId?: T;
+  googleAnalyticsID?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "IRichTextMediaBlock".
+ */
+export interface IRichTextMediaBlock {
+  media: number | Media;
+  rounded?: ('rounded-none' | 'rounded-lg' | 'rounded-full') | null;
+  imageSize?: ('auto' | 'aspect-ratio') | null;
+  ratio?: number | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'media-block';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

@@ -1,14 +1,22 @@
 // storage-adapter-import-placeholder
 import { sqliteAdapter } from '@payloadcms/db-sqlite'
-import { payloadCloudPlugin } from '@payloadcms/payload-cloud'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import path from 'path'
 import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
 import sharp from 'sharp'
+import { nodemailerAdapter } from '@payloadcms/email-nodemailer'
+// import nodemailer from 'nodemailer'
 
 import { Users } from './collections/Users'
-import { Media } from './collections/Media'
+
+import { collections } from '@/collections'
+import { plugins } from '@/plugins'
+import { Footer } from '@/globals/footer/config'
+import { Navbar } from '@/globals/navbar/config'
+import { Posts } from '@/globals/posts/config'
+import { Site } from '@/globals/site/config'
+import { envPublic } from '@/lib/env'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -20,7 +28,9 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media],
+  serverURL:envPublic.cmsUrl,
+  collections: [...collections],
+  globals: [Navbar, Footer, Posts, Site],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
@@ -32,8 +42,14 @@ export default buildConfig({
     },
   }),
   sharp,
-  plugins: [
-    payloadCloudPlugin(),
-    // storage-adapter-placeholder
-  ],
+  plugins: [...plugins],
+  email: nodemailerAdapter({
+    defaultFromAddress: 'test@example.com',
+    defaultFromName: 'Test',
+    transportOptions: {
+      host: '127.0.0.1',
+      port: 1025,
+      secure: false,
+    },
+  }),
 })

@@ -1,8 +1,11 @@
 import { withPayload } from '@payloadcms/next/withPayload'
+const url = new URL(`${process.env.NEXT_PUBLIC_CMS_URL}/**`)
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Your Next.js config here
+  images: {
+    remotePatterns: [url],
+  },
   webpack: (webpackConfig) => {
     webpackConfig.resolve.extensionAlias = {
       '.cjs': ['.cts', '.cjs'],
