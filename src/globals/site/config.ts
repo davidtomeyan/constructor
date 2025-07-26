@@ -1,5 +1,7 @@
 import { GlobalConfig } from 'payload'
 import { authenticated, authenticatedOrPublished } from '@/lib/utils/hooks/auth'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import { defaultFeatures } from '@/components/rich-text/default-features'
 
 export const Site: GlobalConfig = {
   slug: 'site',
@@ -16,6 +18,9 @@ export const Site: GlobalConfig = {
       filterOptions: {
         mimeType: { contains: 'image' },
       },
+      admin:{
+       description:"Favicon Generator - https://realfavicongenerator.net"
+      }
     },
     {
       type: 'text',
@@ -28,6 +33,37 @@ export const Site: GlobalConfig = {
     {
       type: 'text',
       name: 'googleAnalyticsID',
+    },
+    { type: 'checkbox', name: 'cookieConsentBannerEnabled' },
+    {
+      type: 'group',
+      admin: {
+        condition: (data) => {
+          return data?.cookieConsentBannerEnabled
+        },
+      },
+      fields: [
+        {
+          name: 'acceptButtonLabel',
+          type: 'text',
+          defaultValue: 'Accept All',
+          required:true
+        },
+        {
+          name: 'rejectButtonLabel',
+          type: 'text',
+          defaultValue: 'Reject All',
+          required:true
+        },
+        {
+          type: 'richText',
+          name: 'cookieConsentBannerContent',
+          editor: lexicalEditor({
+            features: () => [...defaultFeatures],
+          }),
+          required:true
+        },
+      ],
     },
   ],
 }

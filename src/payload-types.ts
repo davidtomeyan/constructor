@@ -4288,10 +4288,31 @@ export interface PostsPage {
  */
 export interface Site {
   id: number;
+  /**
+   * Favicon Generator - https://realfavicongenerator.net
+   */
   favicon?: (number | null) | Media;
   googleVerificationCode?: string | null;
   googleTagManagerId?: string | null;
   googleAnalyticsID?: string | null;
+  cookieConsentBannerEnabled?: boolean | null;
+  acceptButtonLabel: string;
+  rejectButtonLabel: string;
+  cookieConsentBannerContent: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -4387,6 +4408,10 @@ export interface SiteSelect<T extends boolean = true> {
   googleVerificationCode?: T;
   googleTagManagerId?: T;
   googleAnalyticsID?: T;
+  cookieConsentBannerEnabled?: T;
+  acceptButtonLabel?: T;
+  rejectButtonLabel?: T;
+  cookieConsentBannerContent?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;

@@ -5,8 +5,6 @@ import path from 'path'
 import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
 import sharp from 'sharp'
-import { nodemailerAdapter } from '@payloadcms/email-nodemailer'
-// import nodemailer from 'nodemailer'
 
 import { Users } from './collections/Users'
 
@@ -17,6 +15,7 @@ import { Navbar } from '@/globals/navbar/config'
 import { Posts } from '@/globals/posts/config'
 import { Site } from '@/globals/site/config'
 import { envPublic } from '@/lib/env'
+import { emailFuture } from '@/futures/email'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -43,13 +42,5 @@ export default buildConfig({
   }),
   sharp,
   plugins: [...plugins],
-  email: nodemailerAdapter({
-    defaultFromAddress: 'test@example.com',
-    defaultFromName: 'Test',
-    transportOptions: {
-      host: '127.0.0.1',
-      port: 1025,
-      secure: false,
-    },
-  }),
+  email: emailFuture
 })
