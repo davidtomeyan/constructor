@@ -8,12 +8,20 @@ import {
   PreviewField,
 } from '@payloadcms/plugin-seo/fields'
 import { authenticated, authenticatedOrPublished } from '@/lib/utils/hooks/auth'
+import { revalidatePath } from 'next/cache'
 
 export const Posts: GlobalConfig = {
   slug: 'posts-page',
   access: {
     read: authenticatedOrPublished,
     update: authenticated,
+  },
+  hooks:{
+    afterChange: [
+      () => {
+        revalidatePath('/', 'layout')
+      },
+    ],
   },
   admin: {
     group: 'Posts',

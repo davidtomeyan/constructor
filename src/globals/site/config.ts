@@ -2,12 +2,20 @@ import { GlobalConfig } from 'payload'
 import { authenticated, authenticatedOrPublished } from '@/lib/utils/hooks/auth'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { defaultFeatures } from '@/components/rich-text/default-features'
+import { revalidatePath } from 'next/cache'
 
 export const Site: GlobalConfig = {
   slug: 'site',
   access: {
     read: authenticatedOrPublished,
     update: authenticated,
+  },
+  hooks:{
+    afterChange: [
+      () => {
+        revalidatePath('/', 'layout')
+      },
+    ],
   },
   fields: [
     {

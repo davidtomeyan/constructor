@@ -5,12 +5,20 @@ import { links } from '@/fields/links'
 import { getMaxWidthField, getGapYField } from '@/fields/styles'
 import { authenticated, authenticatedOrPublished } from '@/lib/utils/hooks/auth'
 import { mergeFieldsSafely } from '@/lib/utils/merge-fields-safely'
+import { revalidatePath } from 'next/cache'
 
 export const Footer: GlobalConfig = {
   slug: 'footer',
   access: {
     read: authenticatedOrPublished,
     update: authenticated,
+  },
+  hooks:{
+    afterChange: [
+      () => {
+        revalidatePath('/', 'layout')
+      },
+    ],
   },
   fields: [
     {

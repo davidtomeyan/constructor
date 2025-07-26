@@ -2,12 +2,20 @@ import { GlobalConfig } from 'payload'
 import { links } from '@/fields/links'
 import { authenticated, authenticatedOrPublished } from '@/lib/utils/hooks/auth'
 import { mergeFieldsSafely } from '@/lib/utils/merge-fields-safely'
+import { revalidatePath } from 'next/cache'
 
 export const Navbar: GlobalConfig = {
   slug: 'navbar',
   access: {
     read: authenticatedOrPublished,
     update: authenticated,
+  },
+  hooks:{
+    afterChange: [
+      () => {
+        revalidatePath('/', 'layout')
+      },
+    ],
   },
   fields: [
     {
@@ -37,6 +45,7 @@ export const Navbar: GlobalConfig = {
         },
       ],
     },
+
     { ...mergeFieldsSafely(links, { maxRows: 1000 }) },
     { ...mergeFieldsSafely(links, {name:"callToAction",label:"Call To Action Link"}) },
   ],

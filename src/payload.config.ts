@@ -14,7 +14,6 @@ import { Footer } from '@/globals/footer/config'
 import { Navbar } from '@/globals/navbar/config'
 import { Posts } from '@/globals/posts/config'
 import { Site } from '@/globals/site/config'
-import { envPublic } from '@/lib/env'
 import { emailFuture } from '@/futures/email'
 
 const filename = fileURLToPath(import.meta.url)
@@ -27,7 +26,6 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  serverURL:envPublic.cmsUrl,
   collections: [...collections],
   globals: [Navbar, Footer, Posts, Site],
   editor: lexicalEditor(),
