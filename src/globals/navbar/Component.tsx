@@ -33,8 +33,8 @@ export async function Navbar({ className, ...props }: React.ComponentProps<'head
         {...props}
       >
         <PopoverAnchor className="absolute left-1/2 -translate-x-1/2 pointer-events-none bottom-0" />
-        <div className="grow min-w-0 flex gap-4 justify-between items-center max-w-9xl px-4 shadow-sm py-1 backdrop-blur-lg bg-background/40 border rounded-full">
-          <Logo />
+        <div className="flex-1 min-w-0 flex gap-4 justify-between items-center max-w-9xl px-4 shadow-sm py-1 backdrop-blur-lg bg-background/40 border rounded-full">
+          <Logo/>
           <div className="grow min-w-0 flex justify-center items-center">
             <NavigationMenu className="hidden lg:flex" viewport={false}>
               <NavigationMenuList>
@@ -128,7 +128,6 @@ async function MobileNavigation() {
     >
       <div className="flex min-h-0 max-h-full h-full w-full flex-col py-8 px-4">
         <div className="min-h-0 flex w-full flex-1 overflow-hidden">
-
             <ScrollArea className="flex-1">
               <HideScrollBody/>
               {navbarData.links && <MobileMenuClient data={navbarData.links} />}
@@ -151,24 +150,22 @@ async function Logo() {
 
   if (!logoUrl) return null
   return (
-    <Link className="h-full flex items-center py-0.5 ms-1 min-w-0" href="/">
+    <Link className="h-full flex items-center py-0.5 ms-2 min-w-0" href="/">
       <Image
-        className="inline-block dark:hidden max-h-full max-w-fit object-contain"
-        sizes="auto"
+        className="inline-block dark:hidden w-auto max-h-full max-w-fit object-contain"
         loading="eager"
         quality={100}
-        width={navbarData.logoBase?.width ?? 200}
+        width={navbarData.logoBase?.width ?? 100}
         height={navbarData.logoBase?.height ?? 70}
         src={logoUrl}
         alt={navbarData.logoBase?.alt ?? ''}
       />
       <Image
-        className="hidden dark:inline-block max-h-full max-w-fit object-contain"
-        sizes="auto"
+        className="hidden dark:inline-block w-auto max-h-full max-w-fit object-contain"
         loading="eager"
         quality={100}
-        width={navbarData.logoDark?.width ?? navbarData.logoBase?.width ?? 200}
-        height={navbarData.logoBase?.height ?? navbarData.logoDark?.height ?? 70}
+        width={navbarData.logoDark?.width ?? navbarData.logoBase?.width ?? 100}
+        height={navbarData.logoDark?.height ?? navbarData.logoBase?.height ?? 30}
         src={navbarData.logoDark?.url ?? logoUrl}
         alt={navbarData.logoDark?.alt ?? navbarData.logoBase?.alt ?? ''}
       />

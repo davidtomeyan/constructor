@@ -36,7 +36,7 @@ export default function HeroBlock({
           {content && (
             <RichText
               className={cn([
-                '[&_a]:pointer-events-auto prose-xl lg:prose-2xl',
+                '[&_a]:pointer-events-auto ',
                 maxWidth,
                 backgroundType === 'image' && 'prose-invert',
                 spaceY === 'auto' ? undefined : cn(['[&_*]:p-0 [&_*]:m-0', spaceY]),
