@@ -3,14 +3,13 @@ import { nodemailerAdapter } from '@payloadcms/email-nodemailer'
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
-  secure: false,
+  secure: process.env.NODE_ENV === "production",
   auth: {
     type: "OAuth2",
     user: "tomeyandavid1@gmail.com",
     clientId: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     refreshToken: process.env.GOOGLE_REFRESH_TOKEN,
-    accessToken: process.env.GOOGLE_ACCESS_TOKEN,
   },
 });
 
