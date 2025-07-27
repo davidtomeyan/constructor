@@ -152,7 +152,7 @@ async function Logo() {
   return (
     <Link className="h-full flex items-center py-0.5 ms-2 min-w-0" href="/">
       <Image
-        className="inline-block dark:hidden w-auto max-h-full max-w-fit object-contain"
+        className="inline-block dark:hidden w-auto min-w-0 max-h-full max-w-fit object-contain"
         loading="eager"
         quality={100}
         width={navbarData.logoBase?.width ?? 100}
@@ -161,7 +161,7 @@ async function Logo() {
         alt={navbarData.logoBase?.alt ?? ''}
       />
       <Image
-        className="hidden dark:inline-block w-auto max-h-full max-w-fit object-contain"
+        className="hidden dark:inline-block w-auto min-w-0 max-h-full max-w-fit object-contain"
         loading="eager"
         quality={100}
         width={navbarData.logoDark?.width ?? navbarData.logoBase?.width ?? 100}

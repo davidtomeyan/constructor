@@ -35,10 +35,11 @@ function BackgroundEffects({ type }: BackgroundEffectsProps) {
       return (
         <InteractiveGridPattern
           squares={[50, 50]}
-          squaresClassName={'stroke-secondary'}
+          squaresClassName={'stroke-slate-200 dark:stroke-slate-800'}
           className={cn(
-            'pointer-events-auto [mask-image:radial-gradient(550px_circle_at_center,white,transparent)] lg:[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]',
-            'inset-x-10 inset-y-[-55%] lg:inset-y-[-75%]  h-[220%] lg:h-[240%] skew-y-12 z-0',
+            "border-none",
+            'pointer-events-auto [mask-image:radial-gradient(900px_circle_at_center,white,transparent)] lg:[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]',
+            'inset-x-0 inset-y-[-95%]  h-[220%] skew-y-12 z-0',
           )}
         />
       )
@@ -51,8 +52,8 @@ function BackgroundEffects({ type }: BackgroundEffectsProps) {
           duration={2}
           repeatDelay={1}
           className={cn(
-            '[mask-image:radial-gradient(400px_circle_at_center,white,transparent)] lg:[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]',
-            'inset-x-0 inset-y-[-50%] h-[200%] skew-y-12 z-0 fill-accent stroke-secondary',
+            '[mask-image:radial-gradient(900px_circle_at_center,white,transparent)] lg:[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]',
+            'inset-x-0 inset-y-[-95%]  h-[220%]  skew-y-12 z-0 fill-accent stroke-slate-200 dark:stroke-slate-800',
           )}
         />
       )
