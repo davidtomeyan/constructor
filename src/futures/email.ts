@@ -1,4 +1,4 @@
-// import nodemailer from 'nodemailer'
+import nodemailer from 'nodemailer'
 import { nodemailerAdapter } from '@payloadcms/email-nodemailer'
 
 const transporter = nodemailer.createTransport({
