@@ -237,7 +237,7 @@ export type IGridItem =
                 blockType: 'progress';
               }
             | {
-                rounded: 'rounded-none' | 'rounded-lg' | 'rounded-full';
+                rounded: 'rounded-none' | 'rounded-lg' | 'rounded-xl' | 'rounded-full';
                 objectFit: 'object-cover' | 'object-contain';
                 objectPosition:
                   | 'object-center'
@@ -2068,7 +2068,7 @@ export interface IAccordionBlock {
 export interface IScrollCardsBlock {
   columns?: ('1' | '2' | '3' | '4') | null;
   loop?: boolean | null;
-  rounded: 'rounded-none' | 'rounded-lg' | 'rounded-full';
+  rounded: 'rounded-none' | 'rounded-lg' | 'rounded-xl' | 'rounded-full';
   objectFit: 'object-cover' | 'object-contain';
   ratio: number;
   isIcon?: boolean | null;
@@ -2091,7 +2091,7 @@ export interface IScrollCardsBlock {
  */
 export interface IFlexBlock {
   columns?: ('1' | '2' | '3' | '4') | null;
-  rounded: 'rounded-none' | 'rounded-lg' | 'rounded-full';
+  rounded: 'rounded-none' | 'rounded-lg' | 'rounded-xl' | 'rounded-full';
   objectFit: 'object-cover' | 'object-contain';
   ratio: number;
   isIcon?: boolean | null;
@@ -2152,7 +2152,7 @@ export interface IMediaBlock {
   'media-padding-y'?: IPaddingY;
   isBorderedMediaContainer?: boolean | null;
   imageSize?: ('auto' | 'aspect-ratio') | null;
-  'media-rounded': 'rounded-none' | 'rounded-lg' | 'rounded-full';
+  'media-rounded': 'rounded-none' | 'rounded-lg' | 'rounded-xl' | 'rounded-full';
   objectFit: 'object-cover' | 'object-contain';
   objectPosition:
     | 'object-center'
@@ -2196,7 +2196,7 @@ export interface IMediaBlock {
 export interface ITabsBlock {
   columns?: ('1' | '2' | '3' | '4') | null;
   linksPosition?: ('center' | 'left' | 'right') | null;
-  rounded: 'rounded-none' | 'rounded-lg' | 'rounded-full';
+  rounded: 'rounded-none' | 'rounded-lg' | 'rounded-xl' | 'rounded-full';
   objectFit: 'object-cover' | 'object-contain';
   ratio: number;
   isIcon?: boolean | null;
@@ -3026,7 +3026,7 @@ export interface HorizontalHeroBlock {
   media: number | Media;
   imageSize?: ('auto' | 'aspect-ratio') | null;
   ratio?: number | null;
-  rounded: 'rounded-none' | 'rounded-lg' | 'rounded-full';
+  rounded: 'rounded-none' | 'rounded-lg' | 'rounded-xl' | 'rounded-full';
   objectFit: 'object-cover' | 'object-contain';
   objectPosition:
     | 'object-center'
@@ -3129,7 +3129,7 @@ export interface IMediaBlockWithLabel {
   'media-padding-y'?: IPaddingY;
   isBorderedMediaContainer?: boolean | null;
   imageSize?: ('auto' | 'aspect-ratio') | null;
-  'media-rounded': 'rounded-none' | 'rounded-lg' | 'rounded-full';
+  'media-rounded': 'rounded-none' | 'rounded-lg' | 'rounded-xl' | 'rounded-full';
   objectFit: 'object-cover' | 'object-contain';
   objectPosition:
     | 'object-center'
@@ -4422,7 +4422,7 @@ export interface SiteSelect<T extends boolean = true> {
  */
 export interface IRichTextMediaBlock {
   media: number | Media;
-  rounded?: ('rounded-none' | 'rounded-lg' | 'rounded-full') | null;
+  rounded?: ('rounded-none' | 'rounded-lg' | 'rounded-xl' | 'rounded-full') | null;
   imageSize?: ('auto' | 'aspect-ratio') | null;
   ratio?: number | null;
   id?: string | null;
