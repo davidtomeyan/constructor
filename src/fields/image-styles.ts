@@ -51,8 +51,8 @@ export const getRoundedFitField = (options?: Partial<SelectField>): SelectField 
   const field: SelectField = {
     name: 'rounded',
     type: 'select',
-    options: ['rounded-none', 'rounded-lg', 'rounded-full'],
-    defaultValue: 'rounded-lg',
+    options: ['rounded-none', 'rounded-lg','rounded-xl', 'rounded-full'],
+    defaultValue: 'rounded-xl',
     required: true,
     admin: {
       width: '33%',

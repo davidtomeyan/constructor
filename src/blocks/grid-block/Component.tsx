@@ -65,7 +65,7 @@ export function GridItems({
                 gridRow: `span ${maxRows} / span ${maxRows}`,
               }}
               className={cn([
-                'col-span-2 rounded-lg grid transition-all translate-y-16 opacity-0 scale-95 delay-50',
+                'col-span-2 rounded-xl grid transition-all translate-y-16 opacity-0 scale-95 delay-50',
                 'duration-400 data-[inview=true]:translate-y-0 data-[inview=true]:opacity-100 data-[inview=true]:scale-100 ease-in-out',
                 'grid-rows-subgrid',
                 borderType === 'border' && 'border',
@@ -80,7 +80,7 @@ export function GridItems({
                   <Fragment key={block.id}>
                     {block.blockType === 'rich-text-content' && (
                       <RicheTextContent
-                        className={'rounded-lg lg:prose-lg max-w-full'}
+                        className={'rounded-xl lg:prose-lg max-w-full'}
                         block={block}
                       />
                     )}
