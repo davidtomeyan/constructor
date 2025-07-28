@@ -21,7 +21,7 @@ export function ReviewsBlock({ reviews }: IReviewsBlock) {
       <div className="relative text-start min-w-0 max-w-full w-full opacity-0 translate-y-8 transition-[opacity,translate]  duration-500 data-[inview=true]:opacity-100 data-[inview=true]:translate-y-0">
         <CarouselAutoScroll>
           <CarouselContent>
-            {reviews.map((review) => {
+            {[...reviews,...reviews].map((review) => {
               if (typeof review !== 'object') return null
               const avatar =
                 typeof review.avatar === 'object' ? (review.avatar?.url ?? undefined) : undefined
@@ -30,8 +30,8 @@ export function ReviewsBlock({ reviews }: IReviewsBlock) {
               const parsedISO = parseISO(review.date)
               const formatedData = isValid(parsedISO) ? format(parsedISO, 'PP') : ''
               return (
-                <CarouselItem className="basis-5/6 lg:basis-2/5" key={review.id}>
-                  <Card className="gap-4">
+                <CarouselItem className="basis-5/6 lg:basis-2/5 h-full" key={review.id}>
+                  <Card className="gap-4 h-full">
                     <CardHeader className="flex justify-between">
                       <div className="flex gap-3">
                         <Avatar className="size-11">
